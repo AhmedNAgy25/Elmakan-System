@@ -6,9 +6,9 @@ import Image from "next/image";
 import { team } from "@/lib/constants";
 import SectionTitle from "../ui/SectionTitle";
 
-export default function Team() {
+export default function Team({id}:{id:string}) {
   return (
-    <section className="py-24 px-6 bg-gray-50">
+    <section id={id} className="py-24 px-6 bg-gray-50">
       <div className="container mx-auto text-center">
         {/* sec title */}
         <SectionTitle text="Our Team"></SectionTitle>

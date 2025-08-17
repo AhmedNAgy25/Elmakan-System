@@ -4,9 +4,9 @@ export const revalidate = 10
 import { services } from "@/lib/constants";
 import SectionTitle from "../ui/SectionTitle";
 
-export default function Services() {
+export default function Services({id}:{id:string}) {
   return (
-    <section className="relative py-24 px-12 bg-gradient-to-b from-white to-gray-50">
+    <section id={id} className="relative py-24 px-12 bg-gradient-to-b from-white to-gray-50">
       {/* sec title */}
       <div className="container mx-auto text-center mb-16">
         <SectionTitle text="Our Services"></SectionTitle>

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { links } from "@/lib/constants";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
@@ -14,7 +13,7 @@ export default function Navbar() {
       <div className="h-0.5 w-full bg-gradient-to-r from-purple-500 via-purple-300 to-purple-200 absolute top-full left-0"></div>
       <nav className="container mx-auto flex justify-between items-center px-6 py-4">
         {/* logo */}
-        <Link
+        <a
           href="#home"
           className="flex items-center transform transition-transform duration-500 ease-in-out hover:scale-110"
         >
@@ -25,7 +24,7 @@ export default function Navbar() {
             width={120}
             height={42}
           />
-        </Link>
+        </a>
 
         {/*links*/}
         <ul

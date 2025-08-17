@@ -6,9 +6,9 @@ import Image from "next/image";
 import React from "react";
 import SectionTitle from "../ui/SectionTitle";
 
-export default function Testimonials() {
+export default function Testimonials({id}:{id:string}) {
   return (
-    <section className="relative py-24 px-12 bg-gray-50">
+    <section id={id} className="relative py-24 px-12 bg-gray-50">
       <div className="container mx-auto text-center">
         <SectionTitle text="Testimonials"></SectionTitle>
         <p className="text-lg text-gray-600 mb-16 max-w-2xl mx-auto">

@@ -5,9 +5,9 @@ import { projects } from "@/lib/constants";
 import Image from "next/image";
 import SectionTitle from "../ui/SectionTitle";
 
-export default function Features() {
+export default function Features({id}:{id:string}) {
   return (
-    <section className="py-24 px-12 bg-white">
+    <section id={id} className="py-24 px-12 bg-white">
       <div className="container mx-auto text-center mb-12">
         {/* sec title */}
         <SectionTitle text="Our Projects"></SectionTitle>

@@ -14,12 +14,12 @@ export default function page() {
   return (
     <>
       <Navbar></Navbar>
-      <Hero></Hero>
-      <Services></Services>
-      <Features></Features>
-      <About id="#about"></About>
-      <Testimonials></Testimonials>
-      <Team></Team>
+      <Hero id="home"></Hero>
+      <Services id="services"></Services>
+      <Features id="features"></Features>
+      <About id="about"></About>
+      <Testimonials id="testimonials"></Testimonials>
+      <Team id="team"></Team>
       <ContactForm></ContactForm>
       <Footer></Footer>
     </>

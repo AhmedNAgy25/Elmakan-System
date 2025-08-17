@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { heroSlides } from "@/lib/constants";
 import { Typewriter } from "react-simple-typewriter";
 
-export default function Hero() {
+export default function Hero({id}:{id:string}) {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ export default function Hero() {
   const slide = heroSlides[current];
 
   return (
-    <section className="relative h-screen flex flex-col items-center justify-center text-left bg-gradient-to-br from-purple-600 via-indigo-700 to-gray-950 text-white px-4">
+    <section id={id} className="relative h-screen flex flex-col items-center justify-center text-left bg-gradient-to-br from-purple-600 via-indigo-700 to-gray-950 text-white px-4">
       {/* title */}
       <h1 className="text-3xl md:text-4xl lg:text-6xl text-center font-bold mb-4">
         <Typewriter
