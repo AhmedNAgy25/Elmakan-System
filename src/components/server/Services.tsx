@@ -2,7 +2,7 @@ import { services } from "@/lib/constants";
 
 export default function Services() {
   return (
-    <section className="relative py-24 px-6 bg-gradient-to-b from-white to-gray-50">
+    <section className="relative py-24 px-12 bg-gradient-to-b from-white to-gray-50">
       {/* sec title */}
       <div className="container mx-auto text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">

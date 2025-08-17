@@ -1,14 +1,19 @@
-import Navbar from '@/components/client/Navbar'
-import Hero from '@/components/server/Hero'
-import Services from '@/components/server/Services'
-import React from 'react'
+import Navbar from "@/components/client/Navbar";
+import About from "@/components/server/About";
+import Features from "@/components/server/Features";
+import Hero from "@/components/server/Hero";
+import Services from "@/components/server/Services";
+
+import React from "react";
 
 export default function page() {
   return (
-    <div>
+    <>
       <Navbar></Navbar>
       <Hero></Hero>
       <Services></Services>
-    </div>
-  )
+      <Features></Features>
+      <About></About>
+    </>
+  );
 }

@@ -62,3 +62,47 @@ export const services = [
     icon: "🤖",
   },
 ]; //in this way untill i hold the api
+export const projects = [
+  {
+    id: 1,
+    title: "E-Marketplace Platform",
+    description:
+      "A scalable multi-merchant marketplace where businesses can create their own online store or join the global market.",
+    image: "/images/project1.jpg",
+  },
+  {
+    id: 2,
+    title: "Task Follow-Up System",
+    description:
+      "A task management web app with progress tracking, deadlines, and team collaboration features.",
+    image: "/images/project2.jpg",
+  },
+  {
+    id: 3,
+    title: "Desktop Solutions",
+    description:
+      "Lightweight desktop applications using Tauri and React for modern, cross-platform solutions.",
+    image: "/images/project3.jpg",
+  },
+  {
+    id: 4,
+    title: "Desktop Solutions",
+    description:
+      "Lightweight desktop applications using Tauri and React for modern, cross-platform solutions.",
+    image: "/images/project4.jpg",
+  },
+  {
+    id: 5,
+    title: "Desktop Solutions",
+    description:
+      "Lightweight desktop applications using Tauri and React for modern, cross-platform solutions.",
+    image: "/images/project5.jpg",
+  },
+  {
+    id: 6,
+    title: "Desktop Solutions",
+    description:
+      "Lightweight desktop applications using Tauri and React for modern, cross-platform solutions.",
+    image: "/images/project6.jpg",
+  },
+]; //in this way untill i hold the api
