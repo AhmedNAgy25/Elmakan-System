@@ -1,16 +1,16 @@
+export const dynamic = "force-static"
+export const revalidate = 10
+
 import { projects } from "@/lib/constants";
 import Image from "next/image";
+import SectionTitle from "../ui/SectionTitle";
 
 export default function Features() {
   return (
     <section className="py-24 px-12 bg-white">
       <div className="container mx-auto text-center mb-12">
         {/* sec title */}
-        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
-          <span className="text-purple-600">&lt; </span>
-          Our Projects
-          <span className="text-purple-600"> /&gt;</span>
-        </h2>
+        <SectionTitle text="Our Projects"></SectionTitle>
         <p className="text-gray-600 max-w-2xl mx-auto">
           Explore some of the solutions we’ve built to help businesses thrive
           with cutting-edge technology.
@@ -31,6 +31,7 @@ export default function Features() {
                 alt={project.title}
                 width={600}
                 height={400}
+                loading="lazy" 
                 className="w-full h-48 object-cover"
               />
             </div>

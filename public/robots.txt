@@ -1,0 +1,8 @@
+# robots.txt for Elmakan System
+# Allow all search engines to crawl main public content
+User-agent: *
+Disallow: /dashboard/
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.elmakan.com/sitemap.xml

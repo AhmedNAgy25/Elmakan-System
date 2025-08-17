@@ -1,8 +1,12 @@
-import Image from "next/image";
+export const dynamic = "force-static"
+export const revalidate = 10
 
-export default function About() {
+import Image from "next/image";
+import SectionTitle from "../ui/SectionTitle";
+
+export default function About({id}:{id:string}) {
   return (
-    <section className="relative py-24 px-12 bg-white">
+    <section id={id} className="relative py-24 px-12 bg-white">
       <div className="container mx-auto grid lg:grid-cols-2 gap-16 items-center text-center lg:text-left">
         {/* image */}
         <div className="relative items-center justify-items-center">
@@ -13,17 +17,14 @@ export default function About() {
             alt="About Elmakan System"
             width={500}
             height={400}
+            loading="lazy" 
             className="relative z-10 rounded-2xl shadow-lg p-2 border-2 border-purple-300"
           />
         </div>
 
         {/* text */}
         <div>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
-            <span className="text-purple-600">&lt; </span>
-            About Us
-            <span className="text-purple-600"> /&gt;</span>
-          </h2>
+          <SectionTitle text="About Us"></SectionTitle>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
             At <span className="font-semibold text-purple-600">Elmakan System</span>, 
             we provide innovative technical solutions, software development, and system 

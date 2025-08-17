@@ -14,7 +14,10 @@ export default function Navbar() {
       <div className="h-0.5 w-full bg-gradient-to-r from-purple-500 via-purple-300 to-purple-200 absolute top-full left-0"></div>
       <nav className="container mx-auto flex justify-between items-center px-6 py-4">
         {/* logo */}
-        <Link href="#home" className="flex items-center">
+        <Link
+          href="#home"
+          className="flex items-center transform transition-transform duration-500 ease-in-out hover:scale-110"
+        >
           <Image
             priority
             src="/logo.svg"
@@ -43,13 +46,13 @@ export default function Navbar() {
         >
           {links.map((link) => (
             <li key={link.href} className="text-center">
-              <Link
+              <a
                 href={link.href}
                 onClick={() => setOpen(false)}
                 className="text-gray-700 hover:text-purple-700 transition"
               >
                 {link.label}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>

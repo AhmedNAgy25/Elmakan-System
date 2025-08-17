@@ -1,3 +1,6 @@
+export const dynamic = "force-static"
+export const revalidate = 10
+
 import { contactUs, socialMediaLinks } from "@/lib/constants";
 import Image from "next/image";
 import Link from "next/link";
@@ -79,7 +82,7 @@ export default function Footer() {
           <h3 className="text-lg font-semibold text-white mb-4">Follow Us</h3>
           <div className="flex gap-4">
             {socialMediaLinks.map(({ name, href, icon: Icon }) => (
-              <Link
+              <a
                 key={name}
                 href={href}
                 target="_blank"
@@ -88,7 +91,7 @@ export default function Footer() {
                 aria-label={name}
               >
                 <Icon className="w-5 h-5 text-white" />
-              </Link>
+              </a>
             ))}
           </div>
         </div>

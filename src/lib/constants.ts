@@ -184,7 +184,7 @@ export const contactUs = [
 export const socialMediaLinks = [
   {
     name: "Facebook",
-    href: "https://facebook.com/ElmakanSystem",
+    href: "https://www.facebook.com/elmakansystems",
     icon: Facebook,
   },
   {

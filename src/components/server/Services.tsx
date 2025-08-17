@@ -1,15 +1,15 @@
+export const dynamic = "force-static"
+export const revalidate = 10
+
 import { services } from "@/lib/constants";
+import SectionTitle from "../ui/SectionTitle";
 
 export default function Services() {
   return (
     <section className="relative py-24 px-12 bg-gradient-to-b from-white to-gray-50">
       {/* sec title */}
       <div className="container mx-auto text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">
-          <span className="text-purple-600">&lt; </span>
-          Our Services
-          <span className="text-purple-600"> /&gt;</span>
-        </h2>
+        <SectionTitle text="Our Services"></SectionTitle>
         <p className="text-gray-600 max-w-2xl mx-auto mt-4">
           Elmakan System provides innovative and scalable solutions tailored to
           empower your business growth.

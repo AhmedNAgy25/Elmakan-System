@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { contactUs } from "@/lib/constants";
+import SectionTitle from "../ui/SectionTitle";
 
 export default function ContactForm() {
   return (
@@ -8,11 +9,7 @@ export default function ContactForm() {
       <div className="container mx-auto">
         {/* title */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-            <span className="text-purple-600">&lt; </span>
-            Contact Us
-            <span className="text-purple-600"> /&gt;</span>
-          </h2>
+          <SectionTitle text="Contact Us"></SectionTitle>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Have a question or want to work with us? Fill out the form and our
             team will get back to you.

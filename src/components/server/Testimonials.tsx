@@ -1,16 +1,16 @@
+export const dynamic = "force-static"
+export const revalidate = 10
+
 import { testimonials } from "@/lib/constants";
 import Image from "next/image";
 import React from "react";
+import SectionTitle from "../ui/SectionTitle";
 
 export default function Testimonials() {
   return (
     <section className="relative py-24 px-12 bg-gray-50">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
-          <span className="text-purple-600">&lt; </span>
-          Testimonials
-          <span className="text-purple-600"> /&gt;</span>
-        </h2>
+        <SectionTitle text="Testimonials"></SectionTitle>
         <p className="text-lg text-gray-600 mb-16 max-w-2xl mx-auto">
           See what our clients have to say about working with{" "}
           <span className="font-semibold text-purple-600">Elmakan System</span>.
@@ -27,7 +27,9 @@ export default function Testimonials() {
                   src={t.image}
                   alt={t.name}
                   fill
-                  className="rounded-full object-cover"
+                  sizes="120px"
+                  loading="lazy" 
+                  className="rounded-full object-cover border-1 border-purple-400"
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-900">{t.name}</h3>
