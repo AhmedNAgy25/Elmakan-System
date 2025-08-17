@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section className="relative py-24 px-12 bg-white">
@@ -6,10 +8,12 @@ export default function About() {
         <div className="relative items-center justify-items-center">
           <div className="absolute -top-6 -left-6 w-24 h-24 bg-purple-100 rounded-full blur-2xl opacity-60" />
           <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-100 rounded-full blur-2xl opacity-60" />
-          <img
-            src="/images/about.png" 
+          <Image
+            src="/images/about.png"
             alt="About Elmakan System"
-            className="relative z-10 rounded-2xl shadow-lg flex justify-center p-2 border-2 border-purple-300 rounded-2xl"
+            width={500}
+            height={400}
+            className="relative z-10 rounded-2xl shadow-lg p-2 border-2 border-purple-300"
           />
         </div>
 
