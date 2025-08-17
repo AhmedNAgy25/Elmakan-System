@@ -32,3 +32,33 @@ export const heroSlides = [
     highlight: "Strong Scalable System For Your Shine Business.",
   },
 ]; //in this way untill i hold the api
+export const services = [
+  {
+    id: 1,
+    title: "Web Development",
+    description:
+      "Building responsive and modern web applications using cutting edge technology.",
+    icon: "💻",
+  },
+  {
+    id: 2,
+    title: "Mobile Apps",
+    description:
+      "Creating cross-platform mobile applications with smooth UX and performance.",
+    icon: "📱",
+  },
+  {
+    id: 3,
+    title: "Cloud Solutions",
+    description:
+      "Deploy scalable and secure applications in the cloud, ready for growth.",
+    icon: "☁️",
+  },
+  {
+    id: 4,
+    title: "AI Integration",
+    description:
+      "Integrate AI solutions to automate processes and enhance decision-making.",
+    icon: "🤖",
+  },
+]; //in this way untill i hold the api
