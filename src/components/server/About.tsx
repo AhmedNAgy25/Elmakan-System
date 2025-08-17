@@ -34,7 +34,7 @@ export default function About() {
             scalable solutions that empower organizations to achieve sustainable growth.
           </p>
 
-          <div className="flex gap-4">
+          <div className="flex gap-4 justify-center">
             <button className="px-6 py-3 bg-purple-600 text-white rounded-xl font-medium hover:bg-purple-700 transition">
               Learn More
             </button>

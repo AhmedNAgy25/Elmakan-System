@@ -3,7 +3,7 @@ export const links = [
   { href: "#services", label: "Services" },
   { href: "#about", label: "About" },
   { href: "#testimonials", label: "Testimonials" },
-  { href: "#teams", label: "Teams" },
+  { href: "#team", label: "Team" },
   { href: "#contact", label: "Contact" },
 ]; //in this way untill i hold the api
 export const heroSlides = [
@@ -132,3 +132,25 @@ export const testimonials = [
     image: "/images/testimonials/testimonial3.jpg",
   },
 ]; //in this way untill i hold the api
+export const team = [
+  {
+    name: "Ahmed Ayman",
+    role: "Co-Founder & Technical Lead",
+    image: "/images/team/Ahmed Ayman.jpg",
+  },
+  {
+    name: "Abdelrahman Seada",
+    role: "Senior Engineer",
+    image: "/images/team/Abdelrahman Seada.jpg",
+  },
+  {
+    name: "Mohamed Abdelfatah",
+    role: "Backend Engineer",
+    image: "/images/team/Mohamed Abdelfatah.jpg",
+  },
+  {
+    name: "Ahmed Elgoth",
+    role: "Frontend Engineer",
+    image: "/images/team/Ahmed Elgoth.jpg",
+  },
+];//in this way untill i hold the api
