@@ -68,41 +68,67 @@ export const projects = [
     title: "E-Marketplace Platform",
     description:
       "A scalable multi-merchant marketplace where businesses can create their own online store or join the global market.",
-    image: "/images/project1.jpg",
+    image: "/images/projects/project1.jpg",
   },
   {
     id: 2,
     title: "Task Follow-Up System",
     description:
       "A task management web app with progress tracking, deadlines, and team collaboration features.",
-    image: "/images/project2.jpg",
+    image: "/images/projects/project2.jpg",
   },
   {
     id: 3,
     title: "Desktop Solutions",
     description:
       "Lightweight desktop applications using Tauri and React for modern, cross-platform solutions.",
-    image: "/images/project3.jpg",
+    image: "/images/projects/project3.jpg",
   },
   {
     id: 4,
     title: "Desktop Solutions",
     description:
       "Lightweight desktop applications using Tauri and React for modern, cross-platform solutions.",
-    image: "/images/project4.jpg",
+    image: "/images/projects/project4.jpg",
   },
   {
     id: 5,
     title: "Desktop Solutions",
     description:
       "Lightweight desktop applications using Tauri and React for modern, cross-platform solutions.",
-    image: "/images/project5.jpg",
+    image: "/images/projects/project5.jpg",
   },
   {
     id: 6,
     title: "Desktop Solutions",
     description:
       "Lightweight desktop applications using Tauri and React for modern, cross-platform solutions.",
-    image: "/images/project6.jpg",
+    image: "/images/projects/project6.jpg",
+  },
+]; //in this way untill i hold the api
+export const testimonials = [
+  {
+    id: 1,
+    name: "Ali Mohamed",
+    role: "CEO, Enkloko",
+    feedback:
+      "Elmakan System helped us streamline our operations with a custom software solution. Their professionalism and dedication exceeded our expectations.",
+    image: "/images/testimonials/testimonial1.jpg",
+  },
+  {
+    id: 2,
+    name: "Ahmed Ali",
+    role: "Founder, StartUp Hub",
+    feedback:
+      "The team at Elmakan delivered exactly what we needed—scalable, reliable, and beautifully designed. Highly recommended!",
+    image: "/images/testimonials/testimonial2.jpg",
+  },
+  {
+    id: 3,
+    name: "Mohamed Salah",
+    role: "CTO, Englisher",
+    feedback:
+      "Their technical expertise and attention to detail made a huge difference in our product launch. We look forward to working with them again.",
+    image: "/images/testimonials/testimonial3.jpg",
   },
 ]; //in this way untill i hold the api

@@ -9,7 +9,7 @@ export default function About() {
           <div className="absolute -top-6 -left-6 w-24 h-24 bg-purple-100 rounded-full blur-2xl opacity-60" />
           <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-100 rounded-full blur-2xl opacity-60" />
           <Image
-            src="/images/about.png"
+            src="/images/about/about.png"
             alt="About Elmakan System"
             width={500}
             height={400}
