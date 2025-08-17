@@ -2,23 +2,15 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { links } from "@/lib/constants";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const links = [
-    { href: "#home", label: "Home" },
-    { href: "#about", label: "About" },
-    { href: "#teams", label: "Teams" },
-    { href: "#services", label: "Services" },
-    { href: "#testimonials", label: "Testimonials" },
-    { href: "#contact", label: "Contact" },
-  ];
-
   return (
-    <header className="fixed top-0 left-0 w-full bg-white/70 backdrop-blur-md shadow-sm z-50">
+    <header className="fixed top-0 left-0 w-full bg-white backdrop-blur-md shadow-sm z-50">
       <div className="h-0.5 w-full bg-gradient-to-r from-purple-500 via-purple-300 to-purple-200 absolute top-full left-0"></div>
       <nav className="container mx-auto flex justify-between items-center px-6 py-4">
         {/* logo */}
