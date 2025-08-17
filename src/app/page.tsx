@@ -1,6 +1,8 @@
+import ContactForm from "@/components/client/ContactForm";
 import Navbar from "@/components/client/Navbar";
 import About from "@/components/server/About";
 import Features from "@/components/server/Features";
+import Footer from "@/components/server/Footer";
 import Hero from "@/components/server/Hero";
 import Services from "@/components/server/Services";
 import Team from "@/components/server/Team";
@@ -18,6 +20,8 @@ export default function page() {
       <About></About>
       <Testimonials></Testimonials>
       <Team></Team>
+      <ContactForm></ContactForm>
+      <Footer></Footer>
     </>
   );
 }

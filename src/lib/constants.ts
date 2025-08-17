@@ -1,3 +1,13 @@
+import {
+  MapPin,
+  Mail,
+  Phone,
+  Facebook,
+  Linkedin,
+  Github,
+  Twitter,
+} from "lucide-react";
+
 export const links = [
   { href: "#home", label: "Home" },
   { href: "#services", label: "Services" },
@@ -153,4 +163,43 @@ export const team = [
     role: "Frontend Engineer",
     image: "/images/team/Ahmed Elgoth.jpg",
   },
-];//in this way untill i hold the api
+]; //in this way untill i hold the api
+export const contactUs = [
+  {
+    name: "Our Location",
+    value: "123 Elmakan Street\nZagazig, Egypt",
+    icon: MapPin,
+  },
+  {
+    name: "Email",
+    value: "info@elmakan.com",
+    icon: Mail,
+  },
+  {
+    name: "Phone",
+    value: "+20 123 456 789",
+    icon: Phone,
+  },
+];
+export const socialMediaLinks = [
+  {
+    name: "Facebook",
+    href: "https://facebook.com/ElmakanSystem",
+    icon: Facebook,
+  },
+  {
+    name: "LinkedIn",
+    href: "https://linkedin.com/company/ElmakanSystem",
+    icon: Linkedin,
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/ElmakanSystem",
+    icon: Github,
+  },
+  {
+    name: "Twitter",
+    href: "https://twitter.com/ElmakanSystem",
+    icon: Twitter,
+  },
+];
