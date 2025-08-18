@@ -190,7 +190,7 @@ export const contactUs = [
     value: "+20 123 456 789",
     icon: Phone,
   },
-];
+]; //in this way untill i hold the api
 export const socialMediaLinks = [
   {
     name: "Facebook",
@@ -212,4 +212,4 @@ export const socialMediaLinks = [
     href: "https://twitter.com/ElmakanSystem",
     icon: Twitter,
   },
-];
+]; //in this way untill i hold the api

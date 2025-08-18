@@ -3,6 +3,7 @@ import React, { ChangeEvent, FormEvent, useState } from "react";
 import { contactUs } from "@/lib/constants";
 import SectionTitle from "../ui/SectionTitle";
 
+
 interface FormData {
   name: string;
   email: string;
@@ -47,7 +48,7 @@ export default function ContactForm() {
     const validationErrors = validate();
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
-    } else {
+    } else {  
       setErrors({});
       console.log("Form Submitted:", formData);
     }
