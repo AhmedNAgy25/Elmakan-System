@@ -1,23 +1,15 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { heroSlides } from "@/lib/constants";
 import { Typewriter } from "react-simple-typewriter";
+import { useState } from "react";
+import { ISlide } from "@/lib/types"; 
 
-export default function Hero({id}:{id:string}) {
+export default function HeroSlider({ slides }: { slides: ISlide[] }) {
   const [current, setCurrent] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % heroSlides.length);
-    }, 6000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const slide = heroSlides[current];
+  const slide = slides[current];
 
   return (
-    <section id={id} className="relative h-screen flex flex-col items-center justify-center text-left bg-gradient-to-br from-purple-600 via-indigo-700 to-gray-950 text-white px-4">
+    <>
       {/* title */}
       <h1 className="text-3xl md:text-4xl lg:text-6xl text-center font-bold mb-4">
         <Typewriter
@@ -34,7 +26,7 @@ export default function Hero({id}:{id:string}) {
       {/* subtitle */}
       <p className="text-lg md:text-2xl text-center mb-6">{slide.subtitle}</p>
 
-      {/* high light text */}
+      {/* highlight */}
       <h2 className="text-xl md:text-3xl text-center font-semibold text-purple-300">
         <Typewriter
           words={[slide.highlight]}
@@ -45,16 +37,19 @@ export default function Hero({id}:{id:string}) {
           delaySpeed={500}
         />
       </h2>
+
       {/* CTA */}
       <a
-        href="#contact" // change this to your target section or page
-        className="hover:bg-purple-800 bg-purple-700 text-white mt-14 px-6 py-3 rounded-lg font-semibold shadow-lg transition transform hover:scale-105"
+        href="#contact"
+        className="hover:bg-purple-800 bg-purple-700 text-white mt-14 px-6 py-3 rounded-lg 
+                   font-semibold shadow-lg transition transform hover:scale-105"
       >
         Get Started
       </a>
+
       {/* controls dots */}
       <div className="absolute bottom-6 flex gap-3">
-        {heroSlides.map((_, i) => (
+        {slides.map((_, i) => (
           <span
             key={i}
             onClick={() => setCurrent(i)}
@@ -64,6 +59,6 @@ export default function Hero({id}:{id:string}) {
           />
         ))}
       </div>
-    </section>
+    </>
   );
 }

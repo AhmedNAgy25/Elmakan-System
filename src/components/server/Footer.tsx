@@ -1,11 +1,14 @@
-export const dynamic = "force-static"
-export const revalidate = 10
+export const dynamic = "force-static";
+export const revalidate = 10;
 
-import { contactUs, socialMediaLinks } from "@/lib/constants";
+import { getContactUs, getSocialMediaLinks } from "@/lib/data";
+import { IContactUs, ISocialMediaLink } from "@/lib/types";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Footer() {
+export default async function Footer() {
+  const contactUs = await getContactUs();
+  const socialMediaLinks = await getSocialMediaLinks();
   return (
     <footer className="bg-gray-900 text-gray-300 mt-12">
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-12">
@@ -66,7 +69,7 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-white mb-4">Contact Us</h3>
           <ul className="space-y-4">
-            {contactUs.map(({ value, icon: Icon }, i) => (
+            {contactUs.map(({ value, icon: Icon }:IContactUs, i:number) => (
               <li key={i} className="flex items-start gap-3">
                 <div className="p-2 bg-purple-600 rounded-full">
                   <Icon className="w-5 h-5 text-white" />
@@ -81,7 +84,7 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-white mb-4">Follow Us</h3>
           <div className="flex gap-4">
-            {socialMediaLinks.map(({ name, href, icon: Icon }) => (
+            {socialMediaLinks.map(({ name, href, icon: Icon }:ISocialMediaLink) => (
               <a
                 key={name}
                 href={href}

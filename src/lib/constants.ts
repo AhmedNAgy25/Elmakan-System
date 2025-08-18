@@ -1,4 +1,15 @@
 import {
+  INavLink,
+  ISlide,
+  IService,
+  IProject,
+  ITestimonial,
+  ITeam,
+  IContactUs,
+  ISocialMediaLink,
+} from "./types";
+
+import {
   MapPin,
   Mail,
   Phone,
@@ -8,7 +19,7 @@ import {
   Twitter,
 } from "lucide-react";
 
-export const links = [
+export const links: INavLink[] = [
   { href: "#home", label: "Home" },
   { href: "#services", label: "Services" },
   { href: "#about", label: "About" },
@@ -16,7 +27,7 @@ export const links = [
   { href: "#team", label: "Team" },
   { href: "#contact", label: "Contact" },
 ]; //in this way untill i hold the api
-export const heroSlides = [
+export const slides: ISlide[] = [
   {
     id: 1,
     title: "We Build Modern Web Apps",
@@ -42,7 +53,7 @@ export const heroSlides = [
     highlight: "Strong Scalable System For Your Shine Business.",
   },
 ]; //in this way untill i hold the api
-export const services = [
+export const services: IService[] = [
   {
     id: 1,
     title: "Web Development",
@@ -76,7 +87,7 @@ export const services = [
     icon: "🤖",
   },
 ]; //in this way untill i hold the api
-export const projects = [
+export const projects: IProject[] = [
   {
     id: 1,
     title: "E-Marketplace Platform",
@@ -126,7 +137,7 @@ export const projects = [
     link: "https://www.project6.com",
   },
 ]; //in this way untill i hold the api
-export const testimonials = [
+export const testimonials: ITestimonial[] = [
   {
     id: 1,
     name: "Ali Mohamed",
@@ -152,7 +163,7 @@ export const testimonials = [
     image: "/images/testimonials/testimonial3.jpg",
   },
 ]; //in this way untill i hold the api
-export const team = [
+export const team: ITeam[] = [
   {
     name: "Ahmed Ayman",
     role: "Co-Founder & Technical Lead",
@@ -174,7 +185,7 @@ export const team = [
     image: "/images/team/Ahmed Elgoth.jpg",
   },
 ]; //in this way untill i hold the api
-export const contactUs = [
+export const contactUs: IContactUs[] = [
   {
     name: "Our Location",
     value: "123 Elmakan Street\nZagazig, Egypt",
@@ -191,7 +202,7 @@ export const contactUs = [
     icon: Phone,
   },
 ]; //in this way untill i hold the api
-export const socialMediaLinks = [
+export const socialMediaLinks: ISocialMediaLink[] = [
   {
     name: "Facebook",
     href: "https://www.facebook.com/elmakansystems",

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: process.env.BACK_END_API || "http://localhost:5000/api", 
+  baseURL: process.env.BACK_END_API || "http://localhost:5000/api",
   headers: {
     "Content-Type": "application/json",
   },
@@ -14,7 +14,7 @@ export const getProjects = async () => {
 };
 
 //* hero-slides
-export const getHeroSlides = async () => {
+export const getSlides = async () => {
   const { data } = await api.get("/hero-slides");
   return data;
 };
@@ -34,6 +34,18 @@ export const getTestimonials = async () => {
 //* team
 export const getTeam = async () => {
   const { data } = await api.get("/team");
+  return data;
+};
+
+//* contact info
+export const getContactUs = async () => {
+  const { data } = await api.get("/contact-us");
+  return data;
+};
+
+//* social media links
+export const getSocialMediaLinks = async () => {
+  const { data } = await api.get("/social-links");
   return data;
 };
 

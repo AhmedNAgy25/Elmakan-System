@@ -1,11 +1,13 @@
 export const dynamic = "force-static";
 export const revalidate = 10;
 
-import { projects } from "@/lib/constants";
+import { getProjects } from "@/lib/data";
+import { IProject } from "@/lib/types";
 import Image from "next/image";
 import SectionTitle from "../ui/SectionTitle";
 
-export default function Features({ id }: { id: string }) {
+export default async function Features({ id }: { id: string }) {
+  const projects=await getProjects()
   return (
     <section id={id} className="py-24 px-12 bg-white">
       <div className="container mx-auto text-center mb-12">
@@ -19,7 +21,7 @@ export default function Features({ id }: { id: string }) {
 
       {/* proj container*/}
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project) => (
+        {projects.map((project:IProject) => (
           <a
             href={project.link}
             target="_blank"

@@ -1,10 +1,10 @@
-export const dynamic = "force-static"
-export const revalidate = 10
+export const dynamic = "force-static";
+export const revalidate = 10;
 
 import Image from "next/image";
 import SectionTitle from "../ui/SectionTitle";
 
-export default function About({id}:{id:string}) {
+export default function About({ id }: { id: string }) {
   return (
     <section id={id} className="relative py-24 px-12 bg-white">
       <div className="container mx-auto grid lg:grid-cols-2 gap-16 items-center text-center lg:text-left">
@@ -17,7 +17,7 @@ export default function About({id}:{id:string}) {
             alt="About Elmakan System"
             width={500}
             height={400}
-            loading="lazy" 
+            loading="lazy"
             className="relative z-10 rounded-2xl shadow-lg p-2 border-2 border-purple-300"
           />
         </div>
@@ -26,13 +26,17 @@ export default function About({id}:{id:string}) {
         <div>
           <SectionTitle text="About Us"></SectionTitle>
           <p className="text-sm md:text-lg text-gray-600 mb-6 leading-relaxed">
-            At <span className="font-semibold text-purple-600">Elmakan System</span>, 
-            we provide innovative technical solutions, software development, and system 
-            integrations tailored for businesses of all sizes. 
+            At{" "}
+            <span className="font-semibold text-purple-600">
+              Elmakan System
+            </span>
+            , we provide innovative technical solutions, software development,
+            and system integrations tailored for businesses of all sizes.
           </p>
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            Our team blends creativity, expertise, and modern technologies to deliver 
-            scalable solutions that empower organizations to achieve sustainable growth.
+            Our team blends creativity, expertise, and modern technologies to
+            deliver scalable solutions that empower organizations to achieve
+            sustainable growth.
           </p>
 
           <div className="flex gap-4 justify-center">
