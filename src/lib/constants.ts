@@ -48,6 +48,7 @@ export const services = [
     title: "Web Development",
     description:
       "Building responsive and modern web applications using cutting edge technology.",
+    link: "https://www.google.com/",
     icon: "💻",
   },
   {
@@ -55,6 +56,7 @@ export const services = [
     title: "Mobile Apps",
     description:
       "Creating cross-platform mobile applications with smooth UX and performance.",
+    link: "https://www.google.com/",
     icon: "📱",
   },
   {
@@ -62,6 +64,7 @@ export const services = [
     title: "Cloud Solutions",
     description:
       "Deploy scalable and secure applications in the cloud, ready for growth.",
+    link: "https://www.google.com/",
     icon: "☁️",
   },
   {
@@ -69,6 +72,7 @@ export const services = [
     title: "AI Integration",
     description:
       "Integrate AI solutions to automate processes and enhance decision-making.",
+    link: "https://www.google.com/",
     icon: "🤖",
   },
 ]; //in this way untill i hold the api
@@ -79,6 +83,7 @@ export const projects = [
     description:
       "A scalable multi-merchant marketplace where businesses can create their own online store or join the global market.",
     image: "/images/projects/project1.jpg",
+    link: "project1.com",
   },
   {
     id: 2,
@@ -86,6 +91,7 @@ export const projects = [
     description:
       "A task management web app with progress tracking, deadlines, and team collaboration features.",
     image: "/images/projects/project2.jpg",
+    link: "project2.com",
   },
   {
     id: 3,
@@ -93,6 +99,7 @@ export const projects = [
     description:
       "Lightweight desktop applications using Tauri and React for modern, cross-platform solutions.",
     image: "/images/projects/project3.jpg",
+    link: "project3.com",
   },
   {
     id: 4,
@@ -100,6 +107,7 @@ export const projects = [
     description:
       "Lightweight desktop applications using Tauri and React for modern, cross-platform solutions.",
     image: "/images/projects/project4.jpg",
+    link: "project4.com",
   },
   {
     id: 5,
@@ -107,6 +115,7 @@ export const projects = [
     description:
       "Lightweight desktop applications using Tauri and React for modern, cross-platform solutions.",
     image: "/images/projects/project5.jpg",
+    link: "project5.com",
   },
   {
     id: 6,
@@ -114,6 +123,7 @@ export const projects = [
     description:
       "Lightweight desktop applications using Tauri and React for modern, cross-platform solutions.",
     image: "/images/projects/project6.jpg",
+    link: "project6.com",
   },
 ]; //in this way untill i hold the api
 export const testimonials = [

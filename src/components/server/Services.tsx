@@ -43,9 +43,9 @@ export default function Services({id}:{id:string}) {
 
             {/* button */}
             <div className="absolute inset-6 mt-auto flex justify-center">
-              <button className="mt-auto px-4 py-2 text-sm font-medium text-purple-600 border border-purple-200 rounded-lg hover:bg-purple-50 transition">
+              <a href={service.link} target="_blank" className="mt-auto px-4 py-2 text-sm font-medium text-purple-600 border border-purple-200 rounded-lg hover:bg-purple-50 transition">
                 Learn More →
-              </button>
+              </a>
             </div>
           </div>
         ))}
