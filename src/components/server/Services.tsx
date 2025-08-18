@@ -10,7 +10,7 @@ export default function Services({id}:{id:string}) {
       {/* sec title */}
       <div className="container mx-auto text-center mb-16">
         <SectionTitle text="Our Services"></SectionTitle>
-        <p className="text-gray-600 max-w-2xl mx-auto mt-4">
+        <p className="text-sm md:text-lg text-gray-600 max-w-2xl mx-auto mt-4">
           Elmakan System provides innovative and scalable solutions tailored to
           empower your business growth.
         </p>

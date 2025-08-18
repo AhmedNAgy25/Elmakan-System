@@ -83,7 +83,7 @@ export const projects = [
     description:
       "A scalable multi-merchant marketplace where businesses can create their own online store or join the global market.",
     image: "/images/projects/project1.jpg",
-    link: "project1.com",
+    link: "https://www.project1.com",
   },
   {
     id: 2,
@@ -91,7 +91,7 @@ export const projects = [
     description:
       "A task management web app with progress tracking, deadlines, and team collaboration features.",
     image: "/images/projects/project2.jpg",
-    link: "project2.com",
+    link: "https://www.project2.com",
   },
   {
     id: 3,
@@ -99,7 +99,7 @@ export const projects = [
     description:
       "Lightweight desktop applications using Tauri and React for modern, cross-platform solutions.",
     image: "/images/projects/project3.jpg",
-    link: "project3.com",
+    link: "https://www.project3.com",
   },
   {
     id: 4,
@@ -107,7 +107,7 @@ export const projects = [
     description:
       "Lightweight desktop applications using Tauri and React for modern, cross-platform solutions.",
     image: "/images/projects/project4.jpg",
-    link: "project4.com",
+    link: "https://www.project4.com",
   },
   {
     id: 5,
@@ -115,7 +115,7 @@ export const projects = [
     description:
       "Lightweight desktop applications using Tauri and React for modern, cross-platform solutions.",
     image: "/images/projects/project5.jpg",
-    link: "project5.com",
+    link: "https://www.project5.com",
   },
   {
     id: 6,
@@ -123,7 +123,7 @@ export const projects = [
     description:
       "Lightweight desktop applications using Tauri and React for modern, cross-platform solutions.",
     image: "/images/projects/project6.jpg",
-    link: "project6.com",
+    link: "https://www.project6.com",
   },
 ]; //in this way untill i hold the api
 export const testimonials = [

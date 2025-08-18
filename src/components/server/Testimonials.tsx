@@ -11,7 +11,7 @@ export default function Testimonials({id}:{id:string}) {
     <section id={id} className="relative py-24 px-12 bg-gray-50">
       <div className="container mx-auto text-center">
         <SectionTitle text="Testimonials"></SectionTitle>
-        <p className="text-lg text-gray-600 mb-16 max-w-2xl mx-auto">
+        <p className="text-sm md:text-lg text-gray-600 mb-16 max-w-2xl mx-auto">
           See what our clients have to say about working with{" "}
           <span className="font-semibold text-purple-600">Elmakan System</span>.
         </p>

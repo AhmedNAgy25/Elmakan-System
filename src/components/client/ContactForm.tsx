@@ -59,7 +59,7 @@ export default function ContactForm() {
         {/* title */}
         <div className="text-center mb-12">
           <SectionTitle text="Contact Us"></SectionTitle>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-sm md:text-lg text-gray-600 max-w-2xl mx-auto">
             Have a question or want to work with us? Fill out the form and our
             team will get back to you.
           </p>

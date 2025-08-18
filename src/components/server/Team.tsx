@@ -13,7 +13,7 @@ export default function Team({id}:{id:string}) {
         {/* sec title */}
         <SectionTitle text="Our Team"></SectionTitle>
         {/* sub title */}
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-12">
+        <p className="text-sm md:text-lg text-gray-600 max-w-2xl mx-auto mb-12">
           Meet the people behind{" "}
           <span className="font-semibold text-purple-600">Elmakan System</span>{" "}
           — passionate innovators dedicated to delivering impactful solutions.

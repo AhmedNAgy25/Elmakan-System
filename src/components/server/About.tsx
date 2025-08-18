@@ -25,7 +25,7 @@ export default function About({id}:{id:string}) {
         {/* text */}
         <div>
           <SectionTitle text="About Us"></SectionTitle>
-          <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+          <p className="text-sm md:text-lg text-gray-600 mb-6 leading-relaxed">
             At <span className="font-semibold text-purple-600">Elmakan System</span>, 
             we provide innovative technical solutions, software development, and system 
             integrations tailored for businesses of all sizes. 

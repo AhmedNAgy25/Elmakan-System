@@ -11,7 +11,7 @@ export default function Features({ id }: { id: string }) {
       <div className="container mx-auto text-center mb-12">
         {/* sec title */}
         <SectionTitle text="Our Projects"></SectionTitle>
-        <p className="text-gray-600 max-w-2xl mx-auto">
+        <p className="text-sm md:text-lg text-gray-600 max-w-2xl mx-auto">
           Explore some of the solutions we’ve built to help businesses thrive
           with cutting-edge technology.
         </p>
