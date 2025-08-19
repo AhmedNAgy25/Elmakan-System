@@ -20,7 +20,7 @@ export default async function Testimonials({ id }: { id: string }) {
           {testimonials.map((t: ITestimonial) => (
             <div
               key={t.id}
-              className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center border border-purple-300 hover:shadow-xl transition"
+              className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center  hover:shadow-xl transition"
             >
               <div className="relative w-20 h-20 mb-4">
                 <Image

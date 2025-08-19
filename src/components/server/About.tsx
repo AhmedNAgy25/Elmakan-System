@@ -53,9 +53,9 @@ export default function About({ id }: { id: string }) {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-10">
               {[
                 { number: "5+", label: "Years in Market", icon: Calendar },
-                { number: "150+", label: "Happy Clients", icon: Users },
+                { number: "50+", label: "Happy Clients", icon: Users },
                 {
-                  number: "150+",
+                  number: "50+",
                   label: "Ideas Brought to Life",
                   icon: Lightbulb,
                 },

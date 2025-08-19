@@ -198,22 +198,23 @@ export const testimonials: ITestimonial[] = [
 ]; //in this way untill i hold the api
 export const team: ITeam[] = [
   {
+    name: "Abdelrahman Seada",
+    role: "Co-Founder & Technical Lead",
+    image: "/images/team/Abdelrahman Seada.jpg",
+  },
+  {
     name: "Ahmed Ayman",
     role: "Co-Founder & Technical Lead",
     image: "/images/team/Ahmed Ayman.jpg",
   },
-  {
-    name: "Abdelrahman Seada",
-    role: "Senior Engineer",
-    image: "/images/team/Abdelrahman Seada.jpg",
-  },
+
   {
     name: "Mohamed Abdelfatah",
     role: "Backend Engineer",
-    image: "/images/team/Mohamed Abdelfatah.jpg",
+    image: "/images/team/MohamedAbdelfatah.jpg",
   },
   {
-    name: "Ahmed Elgoth",
+    name: "Ahmed Elgoz",
     role: "Frontend Engineer",
     image: "/images/team/Ahmed Elgoth.jpg",
   },
