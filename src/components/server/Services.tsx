@@ -4,6 +4,7 @@ export const revalidate = 10;
 import { IService } from "@/lib/types";
 import { getServices } from "@/lib/data";
 import SectionTitle from "../ui/SectionTitle";
+import SectionSubtitle from "../ui/SectionSubtitle";
 
 export default async function Services({ id }: { id: string }) {
   const services = await getServices();
@@ -16,10 +17,10 @@ export default async function Services({ id }: { id: string }) {
       {/* sec title */}
       <div className="container mx-auto text-center mb-20">
         <SectionTitle text="Our Services" />
-        <p className="text-gray-600 text-base md:text-lg lg:text-xl max-w-2xl mx-auto mt-4 leading-relaxed">
-          We offer comprehensive web development services to bring your digital
-          vision to life with modern technologies and best practices.
-        </p>
+        <SectionSubtitle
+          text="We offer comprehensive web development services to bring your digital
+          vision to life with modern technologies and best practices."
+        />
       </div>
 
       {/* services container */}

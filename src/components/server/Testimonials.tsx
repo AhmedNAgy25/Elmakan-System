@@ -1,25 +1,23 @@
-export const dynamic = "force-static"
-export const revalidate = 10
+export const dynamic = "force-static";
+export const revalidate = 10;
 
 import { getTestimonials } from "@/lib/data";
 import { ITestimonial } from "@/lib/types";
 import Image from "next/image";
 import React from "react";
 import SectionTitle from "../ui/SectionTitle";
+import SectionSubtitle from "../ui/SectionSubtitle";
 
-export default async function Testimonials({id}:{id:string}) {
-  const testimonials=await getTestimonials()
+export default async function Testimonials({ id }: { id: string }) {
+  const testimonials = await getTestimonials();
   return (
     <section id={id} className="relative py-24 px-12 bg-gray-50">
       <div className="container mx-auto text-center">
         <SectionTitle text="What Our Clients Say"></SectionTitle>
-        <p className="text-sm md:text-lg text-gray-600 mb-16 max-w-2xl mx-auto">
-          See what our clients have to say about working with{" "}
-          <span className="font-semibold text-purple-600">Elmakan System</span>.
-        </p>
+        <SectionSubtitle text="See what our clients have to say about working with Elmakan System" />
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {testimonials.map((t:ITestimonial) => (
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-12">
+          {testimonials.map((t: ITestimonial) => (
             <div
               key={t.id}
               className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center border border-purple-300 hover:shadow-xl transition"
@@ -30,7 +28,7 @@ export default async function Testimonials({id}:{id:string}) {
                   alt={t.name}
                   fill
                   sizes="120px"
-                  loading="lazy" 
+                  loading="lazy"
                   className="rounded-full object-cover border-1 border-purple-400"
                 />
               </div>

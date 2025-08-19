@@ -11,6 +11,7 @@ import {
   ArrowRight,
   Phone,
 } from "lucide-react";
+import SectionSubtitle from "../ui/SectionSubtitle";
 
 export default function About({ id }: { id: string }) {
   return (
@@ -22,14 +23,11 @@ export default function About({ id }: { id: string }) {
         {/* header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <SectionTitle text="About Us" />
-          <p className="text-base sm:text-lg text-gray-600 leading-relaxed mt-4">
-            At{" "}
-            <span className="font-semibold text-purple-600">
-              Elmakan System
-            </span>
-            , we provide innovative technical solutions, software development,
-            and system integrations tailored for businesses of all sizes.
-          </p>
+          <SectionSubtitle
+            text="At Elmakan System , we provide innovative technical solutions,
+            software development, and system integrations tailored for
+            businesses of all sizes."
+          />
         </div>
 
         {/* content layout */}

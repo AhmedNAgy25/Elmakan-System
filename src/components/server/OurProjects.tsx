@@ -5,6 +5,7 @@ import { getProjects } from "@/lib/data";
 import { IProject } from "@/lib/types";
 import Image from "next/image";
 import SectionTitle from "../ui/SectionTitle";
+import SectionSubtitle from "../ui/SectionSubtitle";
 
 export default async function OurProjects({ id }: { id: string }) {
   const projects = await getProjects();
@@ -13,10 +14,10 @@ export default async function OurProjects({ id }: { id: string }) {
       <div className="container mx-auto text-center mb-12">
         {/* title */}
         <SectionTitle text="Our Projects" />
-        <p className="text-sm md:text-lg text-gray-600 max-w-2xl mx-auto">
-          Explore some of the solutions we’ve built to help businesses thrive
-          with cutting-edge technology.
-        </p>
+        <SectionSubtitle
+          text="Explore some of the solutions we’ve built to help businesses thrive
+          with cutting-edge technology."
+        />
       </div>
 
       {/* container */}

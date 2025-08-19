@@ -6,6 +6,7 @@ import Image from "next/image";
 import { ITeam } from "@/lib/types";
 import { getTeam } from "@/lib/data";
 import SectionTitle from "../ui/SectionTitle";
+import SectionSubtitle from "../ui/SectionSubtitle";
 
 export default async function Team({ id }: { id: string }) {
   const team = await getTeam();
@@ -15,15 +16,14 @@ export default async function Team({ id }: { id: string }) {
         {/* sec title */}
         <SectionTitle text="Meet Our Team"></SectionTitle>
         {/* sub title */}
-        <p className="text-sm md:text-lg text-gray-600 max-w-2xl mx-auto mb-12">
-          Meet the people behind{" "}
-          <span className="font-semibold text-purple-600">Elmakan System</span>{" "}
-          — passionate innovators dedicated to delivering impactful solutions.
-        </p>
+        <SectionSubtitle
+          text="Meet the people behind Elmakan System — passionate innovators
+          dedicated to delivering impactful solutions."
+        />
 
         {/* team container */}
         <div className="grid gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {team.map((member:ITeam, index:number) => (
+          {team.map((member: ITeam, index: number) => (
             <div
               key={index}
               className="flex flex-col items-center text-center group"
