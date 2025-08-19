@@ -31,42 +31,22 @@ export const metadata: Metadata = {
     title: "Elmakan System | Professional Web Development & IT Solutions",
     description:
       "We provide innovative technical solutions, custom software development, and IT services that help businesses scale in the digital era.",
-    url: "https://elmakan.com",
     siteName: "Elmakan System",
     type: "website",
     locale: "en_US",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Elmakan System - Web Development and IT Solutions",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Elmakan System | Web Development & IT Solutions",
     description:
       "Innovative technical solutions and custom software development for businesses seeking growth.",
-    images: ["/og-image.png"],
+    images: ["/logo.svg"],
     creator: "@ElmakanSystem",
   },
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.png",
     apple: "/favicon.png",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
   },
 };
 
@@ -87,4 +67,3 @@ export default function RootLayout({
     </html>
   );
 }
-  
