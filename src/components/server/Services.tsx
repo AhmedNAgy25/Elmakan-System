@@ -7,55 +7,52 @@ import SectionTitle from "../ui/SectionTitle";
 
 export default async function Services({ id }: { id: string }) {
   const services = await getServices();
+
   return (
     <section
       id={id}
-      className="relative py-24 px-12 bg-gradient-to-b from-white to-gray-50"
+      className="relative py-28 px-6 sm:px-10 lg:px-20 bg-slate-50"
     >
       {/* sec title */}
-      <div className="container mx-auto text-center mb-16">
-        <SectionTitle text="Our Services"></SectionTitle>
-        <p className="text-sm md:text-lg text-gray-600 max-w-2xl mx-auto mt-4">
-          Elmakan System provides innovative and scalable solutions tailored to
-          empower your business growth.
+      <div className="container mx-auto text-center mb-20">
+        <SectionTitle text="Our Services" />
+        <p className="text-gray-600 text-base md:text-lg lg:text-xl max-w-2xl mx-auto mt-4 leading-relaxed">
+          We offer comprehensive web development services to bring your digital
+          vision to life with modern technologies and best practices.
         </p>
       </div>
 
-      {/* Services container */}
-      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-        {services.map((service:IService) => (
+      {/* services container */}
+      <div className="grid gap-8 sm:gap-10 lg:gap-12 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto items-stretch">
+        {services.map((service: IService) => (
           <div
             key={service.id}
-            className="relative group bg-white rounded-2xl border border-purple-300 p-8 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            className="flex flex-col bg-white rounded-xl shadow-lg p-6 sm:p-8 lg:p-10 border border-gray-100 hover:shadow-2xl hover:border-purple-300 transform hover:-translate-y-1 transition-all duration-300"
           >
-            {/* glow effect */}
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-400 to-blue-400 opacity-0 group-hover:opacity-10 blur-2xl transition" />
-
             {/* icon */}
-            <div className="text-5xl mb-6 flex justify-center">
+            <div className="flex justify-center mb-8 text-purple-600 text-5xl">
               {service.icon}
             </div>
 
             {/* title */}
-            <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-5 text-center">
               {service.title}
             </h3>
 
-            {/* descrption */}
-            <p className="text-gray-600 text-sm text-center mb-12">
+            {/* description */}
+            <p className="text-gray-600 text-base sm:text-lg text-center mb-8 leading-relaxed">
               {service.description}
             </p>
 
-            {/* button */}
-            <div className="absolute inset-6 mt-auto flex justify-center">
-              <a
-                href={service.link}
-                target="_blank"
-                className="mt-auto px-4 py-2 text-sm font-medium text-purple-600 border border-purple-200 rounded-lg hover:bg-purple-50 transition"
-              >
-                Learn More →
-              </a>
-            </div>
+            {/* features (pushed to bottom) */}
+            <ul className="space-y-3 text-base text-gray-700 mt-auto">
+              {service.features?.map((feature, index) => (
+                <li key={index} className="flex items-start">
+                  <span className="text-purple-500 mr-3 mt-1">✓</span>
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>

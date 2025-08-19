@@ -27,64 +27,97 @@ export const links: INavLink[] = [
   { href: "#team", label: "Team" },
   { href: "#contact", label: "Contact" },
 ]; //in this way untill i hold the api
-export const slides: ISlide[] = [
-  {
-    id: 1,
-    title: "We Build Modern Web Apps",
-    subtitle: "Using Powerfull Technoloyies",
-    highlight: "Fast. Secure. Scalable.",
-  },
-  {
-    id: 2,
-    title: "Custom Software Solutions",
-    subtitle: "Make for Your Business",
-    highlight: "Efficiency with Innovation.",
-  },
-  {
-    id: 3,
-    title: "AI Integrated Systems",
-    subtitle: "Powered by AI & Cloud",
-    highlight: "Stay Ahead of the Curve.",
-  },
-  {
-    id: 4,
-    title: "Large Scalable Systems",
-    subtitle: "Make For Today and Up",
-    highlight: "Strong Scalable System For Your Shine Business.",
-  },
-]; //in this way untill i hold the api
+export const slides: ISlide = {
+  title: "We Build Modern\n Web Apps",
+  description:
+    "Transform your ideas into powerful, scalable web applications using\n cutting-edge technologies and best practices.",
+  highlight: "Professional Web Development",
+};
+//in this way untill i hold the api
 export const services: IService[] = [
   {
-    id: 1,
+    id: "web-dev",
+    icon: "🌐",
     title: "Web Development",
     description:
-      "Building responsive and modern web applications using cutting edge technology.",
-    link: "https://www.google.com/",
-    icon: "💻",
+      "Custom web applications built with modern frameworks and responsive design principles.",
+    features: [
+      "React & Next.js Applications",
+      "Responsive Design",
+      "Progressive Web Apps",
+      "API Integration",
+    ],
+    link: "#",
   },
   {
-    id: 2,
-    title: "Mobile Apps",
-    description:
-      "Creating cross-platform mobile applications with smooth UX and performance.",
-    link: "https://www.google.com/",
+    id: "mobile-dev",
     icon: "📱",
-  },
-  {
-    id: 3,
-    title: "Cloud Solutions",
+    title: "Mobile Development",
     description:
-      "Deploy scalable and secure applications in the cloud, ready for growth.",
-    link: "https://www.google.com/",
-    icon: "☁️",
+      "Native and cross-platform mobile applications for iOS and Android devices.",
+    features: [
+      "React Native Apps",
+      "Cross-Platform Solutions",
+      "App Store Deployment",
+      "Performance Optimization",
+    ],
+    link: "#",
   },
   {
-    id: 4,
+    id: "backend-dev",
+    icon: "🚀",
+    title: "Backend Development",
+    description:
+      "Scalable server-side solutions with robust databases and API architectures.",
+    features: [
+      "Node.js & Express",
+      "Database Design",
+      "RESTful APIs",
+      "Cloud Integration",
+    ],
+    link: "#",
+  },
+  {
+    id: "ui-ux",
+    icon: "🎨",
+    title: "UI/UX Design",
+    description:
+      "User-centered design solutions that combine aesthetics with functionality.",
+    features: [
+      "User Interface Design",
+      "User Experience Research",
+      "Prototyping",
+      "Design Systems",
+    ],
+    link: "#",
+  },
+  {
+    id: "ai",
+    icon: "🤖",
     title: "AI Integration",
     description:
-      "Integrate AI solutions to automate processes and enhance decision-making.",
-    link: "https://www.google.com/",
-    icon: "🤖",
+      "Intelligent features powered by artificial intelligence and machine learning.",
+    features: [
+      "ChatBot Development",
+      "AI-Powered Features",
+      "Machine Learning",
+      "Data Analytics",
+    ],
+    link: "#",
+  },
+  {
+    id: "cloud",
+    icon: "☁️",
+    title: "Cloud Solutions",
+    description:
+      "Scalable cloud infrastructure and deployment solutions for modern applications.",
+    features: [
+      "AWS & Azure Deployment",
+      "DevOps & CI/CD",
+      "Performance Monitoring",
+      "Security Implementation",
+    ],
+    link: "#",
   },
 ]; //in this way untill i hold the api
 export const projects: IProject[] = [

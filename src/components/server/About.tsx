@@ -3,29 +3,26 @@ export const revalidate = 10;
 
 import Image from "next/image";
 import SectionTitle from "../ui/SectionTitle";
+import {
+  Calendar,
+  Users,
+  Lightbulb,
+  Headphones,
+  ArrowRight,
+  Phone,
+} from "lucide-react";
 
 export default function About({ id }: { id: string }) {
   return (
-    <section id={id} className="relative py-24 px-12 bg-white">
-      <div className="container mx-auto grid lg:grid-cols-2 gap-16 items-center text-center lg:text-left">
-        {/* image */}
-        <div className="relative items-center justify-items-center">
-          <div className="absolute -top-6 -left-6 w-24 h-24 bg-purple-100 rounded-full blur-2xl opacity-60" />
-          <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-100 rounded-full blur-2xl opacity-60" />
-          <Image
-            src="/images/about/about.png"
-            alt="About Elmakan System"
-            width={500}
-            height={400}
-            loading="lazy"
-            className="relative z-10 rounded-2xl shadow-lg p-2 border-2 border-purple-300"
-          />
-        </div>
-
-        {/* text */}
-        <div>
-          <SectionTitle text="About Us"></SectionTitle>
-          <p className="text-sm md:text-lg text-gray-600 mb-6 leading-relaxed">
+    <section
+      id={id}
+      className="relative py-24 px-6 sm:px-10 lg:px-20 bg-gradient-to-br from-white to-purple-50 overflow-hidden"
+    >
+      <div className="container mx-auto">
+        {/* header */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <SectionTitle text="About Us" />
+          <p className="text-base sm:text-lg text-gray-600 leading-relaxed mt-4">
             At{" "}
             <span className="font-semibold text-purple-600">
               Elmakan System
@@ -33,19 +30,73 @@ export default function About({ id }: { id: string }) {
             , we provide innovative technical solutions, software development,
             and system integrations tailored for businesses of all sizes.
           </p>
-          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            Our team blends creativity, expertise, and modern technologies to
-            deliver scalable solutions that empower organizations to achieve
-            sustainable growth.
-          </p>
+        </div>
 
-          <div className="flex gap-4 justify-center">
-            <button className="px-6 py-3 bg-purple-600 text-white rounded-xl font-medium hover:bg-purple-700 transition">
-              Learn More
-            </button>
-            <button className="px-6 py-3 border border-purple-300 text-purple-600 rounded-xl font-medium hover:bg-purple-50 transition">
-              Contact Us
-            </button>
+        {/* content layout */}
+        <div className="flex flex-col items-center text-center gap-12">
+          {/* image */}
+          <Image
+            src="/images/about/about.png"
+            alt="Elmakan System team"
+            width={500}
+            height={400}
+            className="w-full max-w-[420px] rounded-2xl shadow-xl border-2 border-purple-300 hover:scale-105 transition"
+          />
+
+          {/* text */}
+          <div className="max-w-2xl">
+            <p className="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed">
+              Our team blends creativity, expertise, and modern technologies to
+              deliver scalable solutions that empower organizations to achieve
+              sustainable growth.
+            </p>
+
+            {/* stats grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-10">
+              {[
+                { number: "5+", label: "Years in Market", icon: Calendar },
+                { number: "150+", label: "Happy Clients", icon: Users },
+                {
+                  number: "150+",
+                  label: "Ideas Brought to Life",
+                  icon: Lightbulb,
+                },
+                {
+                  number: "24/7",
+                  label: "Support & Service",
+                  icon: Headphones,
+                },
+              ].map(({ number, label, icon: Icon }, i) => (
+                <div
+                  key={i}
+                  className="flex flex-col items-center justify-center bg-white p-4 rounded-xl shadow-md hover:-translate-y-1 hover:shadow-lg transition"
+                >
+                  <Icon className="w-6 h-6 text-purple-600 mb-2" />
+                  <h3 className="text-2xl font-bold text-purple-600">
+                    {number}
+                  </h3>
+                  <p className="text-gray-700 text-sm font-medium text-center">
+                    {label}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* actions */}
+            <div className="flex flex-wrap gap-4 justify-center">
+              <a
+                href="#services"
+                className="inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-[26px] border border-purple-400 shadow-md transition-transform duration-300 hover:shadow-lg hover:scale-105"
+              >
+                Learn More <ArrowRight className="w-4 h-4" />
+              </a>
+              <a
+                href="tel:+201234567890"
+                className="inline-flex items-center gap-2 bg-gradient-to-tr from-purple-600 to-purple-500 text-white px-6 py-3 rounded-[26px] shadow-md transition-transform duration-300 hover:shadow-lg hover:scale-105"
+              >
+                <Phone className="w-4 h-4" /> Call Us
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ export default async function Testimonials({id}:{id:string}) {
   return (
     <section id={id} className="relative py-24 px-12 bg-gray-50">
       <div className="container mx-auto text-center">
-        <SectionTitle text="Testimonials"></SectionTitle>
+        <SectionTitle text="What Our Clients Say"></SectionTitle>
         <p className="text-sm md:text-lg text-gray-600 mb-16 max-w-2xl mx-auto">
           See what our clients have to say about working with{" "}
           <span className="font-semibold text-purple-600">Elmakan System</span>.

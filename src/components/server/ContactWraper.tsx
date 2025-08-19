@@ -3,9 +3,9 @@ import ContactInfo from "./ContactInfo";
 import ContactForm from "../client/ContactForm";
 import SectionTitle from "../ui/SectionTitle";
 
-export default function ContactWraper() {
+export default function ContactWraper({id}:{id:string}) {
   return (
-    <section id="contact" className="py-24 px-12 bg-white">
+    <section id={id} className="py-24 px-12 bg-white">
       <div className="container mx-auto">
         {/* title */}
         <div className="text-center mb-12">

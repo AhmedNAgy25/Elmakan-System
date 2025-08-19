@@ -6,18 +6,18 @@ export interface INavLink {
 }
 
 export interface ISlide {
-  id: number;
   title: string;
-  subtitle: string;
+  description: string;
   highlight: string;
 }
 
 export interface IService {
-  id: number;
+  id: string;
+  icon: string; 
   title: string;
   description: string;
+  features:string[];
   link: string;
-  icon: string; 
 }
 
 export interface IProject {

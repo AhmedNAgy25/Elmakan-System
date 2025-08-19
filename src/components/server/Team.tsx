@@ -13,7 +13,7 @@ export default async function Team({ id }: { id: string }) {
     <section id={id} className="py-24 px-6 bg-gray-50">
       <div className="container mx-auto text-center">
         {/* sec title */}
-        <SectionTitle text="Our Team"></SectionTitle>
+        <SectionTitle text="Meet Our Team"></SectionTitle>
         {/* sub title */}
         <p className="text-sm md:text-lg text-gray-600 max-w-2xl mx-auto mb-12">
           Meet the people behind{" "}
