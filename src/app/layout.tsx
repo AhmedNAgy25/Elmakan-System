@@ -27,22 +27,6 @@ export const metadata: Metadata = {
     "digital transformation",
   ],
   authors: [{ name: "Elmakan System", url: "https://elmakan.com" }],
-  openGraph: {
-    title: "Elmakan System | Professional Web Development & IT Solutions",
-    description:
-      "We provide innovative technical solutions, custom software development, and IT services that help businesses scale in the digital era.",
-    siteName: "Elmakan System",
-    type: "website",
-    locale: "en_US",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Elmakan System | Web Development & IT Solutions",
-    description:
-      "Innovative technical solutions and custom software development for businesses seeking growth.",
-    images: ["/logo.svg"],
-    creator: "@ElmakanSystem",
-  },
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.png",
