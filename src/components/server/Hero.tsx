@@ -16,6 +16,8 @@ export default async function Hero({ id }: { id: string }) {
       <div className="absolute w-18 h-18 bg-white opacity-15 rounded-full top-45 left-36 animate-float"></div>
       <div className="absolute w-14 h-14 bg-white opacity-15 rounded-full bottom-110 right-75 animate-float-delayed"></div>
       <div className="absolute w-26 h-26 bg-white opacity-15 rounded-full bottom-50 right-40 animate-float-slow"></div>
+      <div className="absolute w-20 h-20 bg-white opacity-10 rounded-full top-20 right-20 animate-float-slower"></div>
+
 
       {/* hero container */}
       <div className="container max-w-4xl md:max-w-3xl sm:max-w-2xl mx-auto px-6 text-center relative z-10">
