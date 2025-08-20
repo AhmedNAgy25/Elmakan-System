@@ -209,35 +209,29 @@ export const team: ITeam[] = [
   {
     name: "Abdelrahman Seada",
     position: "Co-Founder & Technical Lead",
-    image: "/images/team/Abdelrahman Seada.jpg",
+    image: "/images/team/AbdelrahmanSeada.jpg",
     category: "main",
   },
   {
     name: "Ahmed Ayman",
     position: "Co-Founder & Technical Lead",
-    image: "/images/team/Ahmed Ayman.jpg",
+    image: "/images/team/AhmedAyman1.png",
     category: "main",
   },
   {
     name: "Mohamed Abdelfatah",
-    position: "Backend Engineer",
+    position: "Back-end Engineer",
     image: "/images/team/MohamedAbdelfatah.jpg",
     category: "main",
   },
   {
     name: "Ahmed Elgoz",
-    position: "Frontend Engineer",
+    position: "Front-end Engineer",
     image: "/images/team/AhmedElghoz.webp",
     category: "main",
   },
 ];
 export const successors: ITeam[] = [
-  {
-    name: "Ahmed Nagy",
-    position: "Front-end intern",
-    image: "/images/team/Ahmed NAgy.webp",
-    category: "successor",
-  },
   {
     name: "Ahmed Ali",
     position: "Back-end intern",
@@ -245,15 +239,27 @@ export const successors: ITeam[] = [
     category: "successor",
   },
   {
-    name: "Mohamed Abdelfatah",
-    position: "Backend Engineer",
-    image: "/images/team/Ahmed Ayman.jpg",
+    name: "Ahmed Nagy",
+    position: "Front-end intern",
+    image: "/images/team/Ahmed NAgy.webp",
     category: "successor",
   },
   {
-    name: "Ahmed Elgoz",
-    position: "Frontend Engineer",
-    image: "/images/team/Ahmed Ayman.jpg",
+    name: "Abdelrahman Elaraby",
+    position: "Back-end intern",
+    image: "/images/team/AbdelrahmanAmr.png",
+    category: "successor",
+  },
+  {
+    name: "Hussein",
+    position: "Front-end intern",
+    image: "/images/team/Hussein.png",
+    category: "successor",
+  },
+  {
+    name: "Noor",
+    position: "Back-end intern",
+    image: "/images/team/Noor.webp",
     category: "successor",
   },
 ];
