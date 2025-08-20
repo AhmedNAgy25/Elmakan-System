@@ -28,7 +28,7 @@ export default async function Services({ id }: { id: string }) {
         {services.map((service: IService) => (
           <div
             key={service.id}
-            className="flex flex-col bg-white rounded-xl shadow-lg p-6 sm:p-8 lg:p-10 border border-gray-100 hover:shadow-2xl hover:border-purple-300 transform hover:-translate-y-1 transition-all duration-300"
+            className="flex flex-col bg-white rounded-xl shadow-lg p-6 sm:p-8 lg:p-10 border border-gray-100 hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300"
           >
             {/* icon */}
             <div className="flex justify-center mb-8 text-purple-600 text-5xl">

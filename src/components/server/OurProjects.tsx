@@ -28,7 +28,7 @@ export default async function OurProjects({ id }: { id: string }) {
             target="_blank"
             rel="noopener noreferrer"
             key={project.id}
-            className="group flex flex-col bg-gray-50 rounded-xl shadow-md border border-transparent hover:border-purple-400 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden"
+            className="group flex flex-col bg-gray-50 rounded-xl shadow-md border border-transparent hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden"
           >
             {/* image */}
             <div className="overflow-hidden">
