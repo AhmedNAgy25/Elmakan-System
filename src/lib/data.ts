@@ -32,6 +32,9 @@ export const getTestimonials = () => {
 export const getTeam = () => {
   return safeFetch(api.getTeam, constants.team);
 };
+export const getSuccessors = () => {
+  return safeFetch(api.getSuccessors, constants.successors);
+};
 export const getContactUs = () => {
   return safeFetch(api.getContactUs, constants.contactUs);
 };

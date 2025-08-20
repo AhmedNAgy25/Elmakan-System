@@ -7,6 +7,7 @@ import Team from "@/components/server/Team";
 import Testimonials from "@/components/server/Testimonials";
 import ContactWraper from "@/components/server/ContactWraper";
 import OurProjects from "@/components/server/OurProjects";
+import Successors from "@/components/server/Successors";
 
 export default async function page() {
   return (
@@ -18,6 +19,7 @@ export default async function page() {
       <About id="about"></About>
       <Testimonials id="testimonials"></Testimonials>
       <Team id="team"></Team>
+      <Successors id="successors"></Successors>
       <ContactWraper id="contact"></ContactWraper>
       <Footer></Footer>
     </>

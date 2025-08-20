@@ -165,7 +165,7 @@ export const testimonials: ITestimonial[] = [
   {
     id: 1,
     name: "Ali Mohamed",
-    role: "CEO, Enkloko",
+    position: "CEO, Enkloko",
     feedback:
       "Elmakan System helped us streamline our operations with a custom software solution. Their professionalism and dedication exceeded our expectations.",
     image: "/images/testimonials/testimonial1.jpg",
@@ -173,7 +173,7 @@ export const testimonials: ITestimonial[] = [
   {
     id: 2,
     name: "Ahmed Ali",
-    role: "Founder, StartUp Hub",
+    position: "Founder, StartUp Hub",
     feedback:
       "The team at Elmakan delivered exactly what we needed—scalable, reliable, and beautifully designed. Highly recommended!",
     image: "/images/testimonials/testimonial2.jpg",
@@ -181,7 +181,7 @@ export const testimonials: ITestimonial[] = [
   {
     id: 3,
     name: "Mohamed Salah",
-    role: "CTO, Englisher",
+    position: "CTO, Englisher",
     feedback:
       "Their technical expertise and attention to detail made a huge difference in our product launch. We look forward to working with them again.",
     image: "/images/testimonials/testimonial3.jpg",
@@ -190,23 +190,55 @@ export const testimonials: ITestimonial[] = [
 export const team: ITeam[] = [
   {
     name: "Abdelrahman Seada",
-    role: "Co-Founder & Technical Lead",
+    position: "Co-Founder & Technical Lead",
     image: "/images/team/Abdelrahman Seada.jpg",
+    category: "main",
   },
   {
     name: "Ahmed Ayman",
-    role: "Co-Founder & Technical Lead",
+    position: "Co-Founder & Technical Lead",
     image: "/images/team/Ahmed Ayman.jpg",
+    category: "main",
   },
   {
     name: "Mohamed Abdelfatah",
-    role: "Backend Engineer",
+    position: "Backend Engineer",
     image: "/images/team/MohamedAbdelfatah.jpg",
+    category: "main",
   },
   {
     name: "Ahmed Elgoz",
-    role: "Frontend Engineer",
+    position: "Frontend Engineer",
     image: "/images/team/AhmedElghoz.webp",
+    category: "main",
+  },
+];
+export const successors: ITeam[] = [
+  {
+    name: "Ahmed Nagy",
+    position: "Front-end intern",
+    image: "/images/team/Ahmed NAgy.webp",
+    category: "successor",
+  },
+  {
+    name: "Ahmed Ali",
+    position: "Back-end intern",
+    image: "/images/team/Ahmed Ayman.jpg",
+    category:"successor"
+  },
+  {
+    name: "Mohamed Abdelfatah",
+    position: "Backend Engineer",
+    image: "/images/team/Ahmed Ayman.jpg",
+    category:"successor"
+
+  },
+  {
+    name: "Ahmed Elgoz",
+    position: "Frontend Engineer",
+    image: "/images/team/Ahmed Ayman.jpg",
+    category:"successor"
+
   },
 ];
 export const contactUs: IContactUs[] = [

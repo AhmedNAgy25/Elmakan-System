@@ -13,10 +13,10 @@ export interface ISlide {
 
 export interface IService {
   id: string;
-  icon: string; 
+  icon: string;
   title: string;
   description: string;
-  features:string[];
+  features: string[];
   link: string;
 }
 
@@ -24,22 +24,23 @@ export interface IProject {
   id: number;
   title: string;
   description: string;
-  image: string; 
+  image: string;
   link: string;
 }
 
 export interface ITestimonial {
   id: number;
   name: string;
-  role: string;
+  position: string;
   feedback: string;
   image: string;
 }
 
 export interface ITeam {
   name: string;
-  role: string;
+  position: string;
   image: string;
+  category: "main" | "successor";
 }
 
 export interface IContactUs {

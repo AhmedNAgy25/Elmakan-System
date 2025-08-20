@@ -43,8 +43,8 @@ export default async function Team({ id }: { id: string }) {
               <h3 className="text-xl font-semibold text-gray-900">
                 {member.name}
               </h3>
-              {/* role */}
-              <p className="text-purple-600 font-medium">{member.role}</p>
+              {/* position */}
+              <p className="text-purple-600 font-medium">{member.position}</p>
             </div>
           ))}
         </div>

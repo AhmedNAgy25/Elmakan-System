@@ -33,7 +33,7 @@ export default async function Testimonials({ id }: { id: string }) {
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-900">{t.name}</h3>
-              <p className="text-sm text-gray-500 mb-4">{t.role}</p>
+              <p className="text-sm text-gray-500 mb-4">{t.position}</p>
               <p className="text-gray-600 italic leading-relaxed">
                 “{t.feedback}”
               </p>

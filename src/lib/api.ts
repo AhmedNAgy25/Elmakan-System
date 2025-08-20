@@ -38,6 +38,12 @@ export const getTeam = async () => {
   return data;
 };
 
+//* successors
+export const getSuccessors = async () => {
+  const { data } = await api.get("/successors");
+  return data;
+};
+
 //* contact info
 export const getContactUs = async () => {
   const { data } = await api.get("/contact-us");
