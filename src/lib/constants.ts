@@ -9,15 +9,7 @@ import {
   ISocialMediaLink,
 } from "./types";
 
-import {
-  MapPin,
-  Mail,
-  Phone,
-  Facebook,
-  Linkedin,
-  Github,
-  Twitter,
-} from "lucide-react";
+import { Mail, Phone, Facebook, Linkedin, Github, Twitter } from "lucide-react";
 
 export const links: INavLink[] = [
   { href: "#home", label: "Home" },
@@ -26,14 +18,13 @@ export const links: INavLink[] = [
   { href: "#testimonials", label: "Testimonials" },
   { href: "#team", label: "Team" },
   { href: "#contact", label: "Contact" },
-]; //in this way untill i hold the api
+];
 export const slides: ISlide = {
   title: "We Build Modern\n Web Apps",
   description:
     "Transform your ideas into powerful, scalable web applications using\n cutting-edge technologies and best practices.",
   highlight: "Professional Web Development",
 };
-//in this way untill i hold the api
 export const services: IService[] = [
   {
     id: "web-dev",
@@ -119,7 +110,7 @@ export const services: IService[] = [
     ],
     link: "#",
   },
-]; //in this way untill i hold the api
+];
 export const projects: IProject[] = [
   {
     id: 1,
@@ -169,7 +160,7 @@ export const projects: IProject[] = [
     image: "/images/projects/project6.jpg",
     link: "https://www.project6.com",
   },
-]; //in this way untill i hold the api
+];
 export const testimonials: ITestimonial[] = [
   {
     id: 1,
@@ -195,7 +186,7 @@ export const testimonials: ITestimonial[] = [
       "Their technical expertise and attention to detail made a huge difference in our product launch. We look forward to working with them again.",
     image: "/images/testimonials/testimonial3.jpg",
   },
-]; //in this way untill i hold the api
+];
 export const team: ITeam[] = [
   {
     name: "Abdelrahman Seada",
@@ -207,7 +198,6 @@ export const team: ITeam[] = [
     role: "Co-Founder & Technical Lead",
     image: "/images/team/Ahmed Ayman.jpg",
   },
-
   {
     name: "Mohamed Abdelfatah",
     role: "Backend Engineer",
@@ -216,15 +206,10 @@ export const team: ITeam[] = [
   {
     name: "Ahmed Elgoz",
     role: "Frontend Engineer",
-    image: "/images/team/Ahmed Elgoth.jpg",
+    image: "/images/team/AhmedElghoz.webp",
   },
-]; //in this way untill i hold the api
+];
 export const contactUs: IContactUs[] = [
-  {
-    name: "Our Location",
-    value: "123 Elmakan Street\nZagazig, Egypt",
-    icon: MapPin,
-  },
   {
     name: "Email",
     value: "info@elmakan.com",
@@ -235,7 +220,7 @@ export const contactUs: IContactUs[] = [
     value: "+20 123 456 789",
     icon: Phone,
   },
-]; //in this way untill i hold the api
+];
 export const socialMediaLinks: ISocialMediaLink[] = [
   {
     name: "Facebook",
@@ -257,4 +242,4 @@ export const socialMediaLinks: ISocialMediaLink[] = [
     href: "https://twitter.com/ElmakanSystem",
     icon: Twitter,
   },
-]; //in this way untill i hold the api
+];

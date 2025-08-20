@@ -1,4 +1,5 @@
 import axios from "axios";
+import { safeFetch } from "./data";
 
 const api = axios.create({
   baseURL: process.env.BACK_END_API || "http://localhost:5000/api",
@@ -50,11 +51,25 @@ export const getSocialMediaLinks = async () => {
 };
 
 //* contactForm
-export const sendContactForm = async (formData: {
+type ContactResponse = { success: boolean; message: string };
+
+export const sendContactForm = (formData: {
   name: string;
   email: string;
   message: string;
 }) => {
-  const { data } = await api.post("/contact", formData);
-  return data;
+  if (process.env.NEXT_PUBLIC_USE_MOCK === "true") {
+    return Promise.resolve({
+      success: true,
+      message: "Mock: message stored locally",
+    });
+  }
+
+  return safeFetch<ContactResponse>(
+    async () => {
+      const { data } = await api.post<ContactResponse>("/contact", formData);
+      return data;
+    },
+    { success: true, message: "Mock: message stored locally" }
+  );
 };

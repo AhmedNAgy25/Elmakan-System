@@ -1,10 +1,18 @@
 import * as api from "./api";
 import * as constants from "./constants";
 
-async function safeFetch<T>(fn: () => Promise<T>, fallback: T): Promise<T> {
+export async function safeFetch<T>(
+  fn: () => Promise<T>,
+  fallback: T
+): Promise<T> {
   try {
     return await fn();
-  } catch {
+  } catch (err) {
+    if (process.env.NEXT_PUBLIC_USE_MOCK === "true") {
+      console.warn("Using mock data instead of API response.");
+    } else {
+      console.error("safeFetch error:", err);
+    }
     return fallback;
   }
 }

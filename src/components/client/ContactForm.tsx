@@ -8,51 +8,65 @@ export default function ContactForm() {
     useContactForm();
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="bg-white/80 backdrop-blur-sm p-10 rounded-2xl border border-purple-100 shadow-xl space-y-6"
-    >
-      <InputField
-        name="name"
-        value={formData.name}
-        placeholder="Your Name"
-        error={errors.name}
-        onChange={handleChange}
-      />
-      <InputField
-        name="email"
-        type="email"
-        value={formData.email}
-        placeholder="Your Email"
-        error={errors.email}
-        onChange={handleChange}
-      />
-      <InputField
-        name="message"
-        value={formData.message}
-        placeholder="Your Message"
-        error={errors.message}
-        onChange={handleChange}
-        textarea
-      />
-
-      <button
-        type="submit"
-        disabled={loading}
-        className="w-full bg-gradient-to-r from-purple-600 to-purple-500 text-white font-semibold py-3 px-6 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] transition disabled:opacity-50"
-      >
-        {loading ? "Sending..." : "Send Message"}
-      </button>
-
-      {success && (
-        <p
-          className={`text-sm mt-2 ${
-            success.includes("successfully") ? "text-green-600" : "text-red-600"
-          }`}
-        >
-          {success}
+    <div className="w-full h-full px-4 sm:px-6 lg:px-10 py-8 flex flex-col justify-between ">
+      {/* text */}
+      <div>
+        <h2 className=" text-2xl font-bold text-gray-800 text-center md:text-left">
+          Send us a message
+        </h2>
+        <p className=" text-gray-600 mt-2 text-center md:text-left">
+          Fill out the form below and our team will get back to you within 24
+          hours.
         </p>
-      )}
-    </form>
+      </div>
+
+      <form onSubmit={handleSubmit} className="mt-6 space-y-5">
+        <InputField
+          name="name"
+          value={formData.name}
+          placeholder="Enter your full name"
+          error={errors.name}
+          onChange={handleChange}
+        />
+
+        <InputField
+          name="email"
+          type="email"
+          value={formData.email}
+          placeholder="Enter your email address"
+          error={errors.email}
+          onChange={handleChange}
+        />
+
+        <InputField
+          name="message"
+          value={formData.message}
+          placeholder="Tell us more about your inquiry..."
+          error={errors.message}
+          onChange={handleChange}
+          textarea
+        />
+
+        <button
+          type="submit"
+          disabled={loading}
+          className="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-xl shadow-md transition disabled:opacity-50"
+        >
+          {loading ? "Sending..." : "Send Message"}
+        </button>
+
+        {success && (
+          <p
+            className={`text-sm mt-2 text-center md:text-left ${
+              success.includes("successfully")
+                ? "text-green-600"
+                : "text-red-600"
+            }`}
+          >
+            {success}
+          </p>
+        )}
+      </form>
+    </div>
   );
 }

@@ -11,7 +11,7 @@ export default async function Footer() {
   const socialMediaLinks = await getSocialMediaLinks();
 
   return (
-    <footer className="bg-gray-900 text-gray-300 mt-12">
+    <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 md:divide-x md:divide-gray-800 text-center md:text-left">
         
         {/* info */}

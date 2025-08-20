@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { sendContactForm } from "@/lib/api"; 
+import { sendContactForm } from "@/lib/api";
 
 export interface FormData {
   name: string;
