@@ -3,17 +3,14 @@ export const revalidate = 10;
 
 import Image from "next/image";
 import SectionTitle from "../ui/SectionTitle";
-import {
-  Calendar,
-  Users,
-  Lightbulb,
-  Headphones,
-  ArrowRight,
-  Phone,
-} from "lucide-react";
 import SectionSubtitle from "../ui/SectionSubtitle";
+import { getAboutCards } from "@/lib/data";
+import { IAboutCard } from "@/lib/types";
+import { ArrowRight, Phone } from "lucide-react";
 
-export default function About({ id }: { id: string }) {
+export default async function About({ id }: { id: string }) {
+  const aboutCards: IAboutCard[] = await getAboutCards();
+
   return (
     <section
       id={id}
@@ -23,27 +20,23 @@ export default function About({ id }: { id: string }) {
         {/* header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <SectionTitle text="About Us" />
-          <SectionSubtitle
-            text="At Elmakan System , we provide innovative technical solutions,
-            software development, and system integrations tailored for
-            businesses of all sizes."
-          />
+          <SectionSubtitle text="At Elmakan System, we provide innovative technical solutions, software development, and system integrations tailored for businesses of all sizes." />
         </div>
 
         {/* content layout */}
         <div className="flex flex-col items-center text-center gap-12">
           {/* image */}
           <Image
-            src="/images/about/about.png"
+            src="/images/about/about.svg"
             alt="Elmakan System team"
-            width={500}
-            height={400}
-            className="w-full max-w-[420px] rounded-2xl shadow-xl border-2 border-purple-300 hover:scale-105 transition"
+            width={953}
+            height={336}
+            className="w-full max-w-2xl "
           />
 
           {/* text */}
           <div className="max-w-2xl">
-            <p className="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed">
+            <p className="text-base text-start sm:text-lg text-gray-600 mb-8 leading-relaxed">
               Our team blends creativity, expertise, and modern technologies to
               deliver scalable solutions that empower organizations to achieve
               sustainable growth.
@@ -51,33 +44,25 @@ export default function About({ id }: { id: string }) {
 
             {/* stats grid */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-10">
-              {[
-                { number: "5+", label: "Years in Market", icon: Calendar },
-                { number: "50+", label: "Happy Clients", icon: Users },
-                {
-                  number: "50+",
-                  label: "Ideas Brought to Life",
-                  icon: Lightbulb,
-                },
-                {
-                  number: "24/7",
-                  label: "Support & Service",
-                  icon: Headphones,
-                },
-              ].map(({ number, label, icon: Icon }, i) => (
-                <div
-                  key={i}
-                  className="flex flex-col items-center justify-center bg-white p-4 rounded-xl shadow-md hover:-translate-y-1 hover:shadow-lg transition"
-                >
-                  <Icon className="w-6 h-6 text-purple-600 mb-2" />
-                  <h3 className="text-2xl font-bold text-purple-600">
-                    {number}
-                  </h3>
-                  <p className="text-gray-700 text-sm font-medium text-center">
-                    {label}
-                  </p>
-                </div>
-              ))}
+              {aboutCards.map(
+                ({ number, label, icon }: IAboutCard, i: number) => {
+                  const Icon = icon;
+                  return (
+                    <div
+                      key={i}
+                      className="flex flex-col items-center justify-center bg-white p-4 rounded-xl shadow-md hover:-translate-y-1 hover:shadow-lg transition"
+                    >
+                      <Icon className="w-6 h-6 text-purple-600 mb-2" />
+                      <h3 className="text-2xl font-bold text-purple-600">
+                        {number}
+                      </h3>
+                      <p className="text-gray-700 text-sm font-medium text-center">
+                        {label}
+                      </p>
+                    </div>
+                  );
+                }
+              )}
             </div>
 
             {/* actions */}

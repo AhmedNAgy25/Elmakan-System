@@ -7,9 +7,21 @@ import {
   ITeam,
   IContactUs,
   ISocialMediaLink,
+  IAboutCard,
 } from "./types";
 
-import { Mail, Phone, Facebook, Linkedin, Github, Twitter } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  Facebook,
+  Linkedin,
+  Github,
+  Twitter,
+  Calendar,
+  Users,
+  Lightbulb,
+  Headphones,
+} from "lucide-react";
 
 export const links: INavLink[] = [
   { href: "#home", label: "Home" },
@@ -161,6 +173,12 @@ export const projects: IProject[] = [
     link: "https://www.project6.com",
   },
 ];
+export const aboutCards: IAboutCard[] = [
+  { number: "5+", label: "Years in Market", icon: Calendar },
+  { number: "50+", label: "Happy Clients", icon: Users },
+  { number: "50+", label: "Idea to Life", icon: Lightbulb },
+  { number: "24/7", label: "Support & Service", icon: Headphones },
+];
 export const testimonials: ITestimonial[] = [
   {
     id: 1,
@@ -224,21 +242,19 @@ export const successors: ITeam[] = [
     name: "Ahmed Ali",
     position: "Back-end intern",
     image: "/images/team/Ahmed Ayman.jpg",
-    category:"successor"
+    category: "successor",
   },
   {
     name: "Mohamed Abdelfatah",
     position: "Backend Engineer",
     image: "/images/team/Ahmed Ayman.jpg",
-    category:"successor"
-
+    category: "successor",
   },
   {
     name: "Ahmed Elgoz",
     position: "Frontend Engineer",
     image: "/images/team/Ahmed Ayman.jpg",
-    category:"successor"
-
+    category: "successor",
   },
 ];
 export const contactUs: IContactUs[] = [

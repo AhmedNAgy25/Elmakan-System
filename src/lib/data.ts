@@ -26,6 +26,9 @@ export const getServices = () => {
 export const getProjects = () => {
   return safeFetch(api.getProjects, constants.projects);
 };
+export const getAboutCards = () => {
+  return safeFetch(api.getAboutCards, constants.aboutCards);
+};
 export const getTestimonials = () => {
   return safeFetch(api.getTestimonials, constants.testimonials);
 };

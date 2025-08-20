@@ -28,6 +28,12 @@ export interface IProject {
   link: string;
 }
 
+export interface IAboutCard {
+  number: string;
+  label: string;
+  icon: LucideIcon;
+}
+
 export interface ITestimonial {
   id: number;
   name: string;

@@ -14,6 +14,12 @@ export const getProjects = async () => {
   return data;
 };
 
+//* about cards
+export const getAboutCards = async () => {
+  const { data } = await api.get("/about-cards");
+  return data;
+};
+
 //* hero-slides
 export const getSlides = async () => {
   const { data } = await api.get("/hero-slides");
