@@ -15,7 +15,7 @@ export default async function Successors({ id }: { id: string }) {
       <div className="container mx-auto text-center">
         <SectionTitle text="Our Successors" />
         <SectionSubtitle text="The next generation of engineers growing with Elmakan System." />
-        <SuccessorsClient successors={successors} />
+        <SuccessorsClient successors={successors}/>
       </div>
     </section>
   );

@@ -22,38 +22,56 @@ export default async function OurProjects({ id }: { id: string }) {
 
       {/* container */}
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project: IProject) => (
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            key={project.id}
-            className="group flex flex-col bg-gray-50 rounded-xl shadow-md border border-transparent hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden"
-          >
-            {/* image */}
-            <div className="overflow-hidden">
-              <Image
-                src={project.image}
-                alt={`${project.title} project screenshot`}
-                width={600}
-                height={400}
-                loading="lazy"
-                className="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
+        {projects.map((project: IProject) => {
+          const hasLink = project.link && project.link.trim() !== "";
 
-            {/* card content */}
-            <div className="p-6 flex flex-col flex-grow">
-              <h3 className="text-xl font-semibold mb-2 text-gray-800 group-hover:text-purple-600 transition-colors">
-                {project.title}
-              </h3>
-              <p className="text-gray-600 flex-grow">{project.description}</p>
-              <span className="text-purple-600 font-medium mt-4 group-hover:underline">
-                View Project →
-              </span>
+          return (
+            <div
+              key={project.id}
+              className={`group flex flex-col bg-gray-50 rounded-xl shadow-md border border-transparent transition-all duration-300 overflow-hidden 
+          ${hasLink ? "hover:shadow-2xl hover:-translate-y-2" : ""}`}
+            >
+              {/* image */}
+              <div className="overflow-hidden">
+                <Image
+                  src={project.image}
+                  alt={`${project.title} project screenshot`}
+                  width={600}
+                  height={400}
+                  loading="lazy"
+                  className={`w-full aspect-video object-cover transition-transform duration-300 ${
+                    hasLink ? "group-hover:scale-105" : ""
+                  }`}
+                />
+              </div>
+
+              {/* card content */}
+              <div className="p-6 flex flex-col flex-grow">
+                <h3
+                  className={`text-xl font-semibold mb-2 text-gray-800 ${
+                    hasLink
+                      ? "group-hover:text-purple-600 transition-colors"
+                      : ""
+                  }`}
+                >
+                  {project.title}
+                </h3>
+                <p className="text-gray-600 flex-grow">{project.description}</p>
+
+                {hasLink && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-purple-600 font-medium mt-4 group-hover:underline"
+                  >
+                    View Project →
+                  </a>
+                )}
+              </div>
             </div>
-          </a>
-        ))}
+          );
+        })}
       </div>
     </section>
   );

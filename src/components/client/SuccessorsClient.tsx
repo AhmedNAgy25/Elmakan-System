@@ -17,6 +17,7 @@ export default function SuccessorsClient({ successors }: { successors: ITeam[] }
                 alt={member.name}
                 fill
                 sizes="96px"
+                loading="lazy"
                 className="rounded-full object-cover border border-gray-300 group-hover:scale-105 transition-transform duration-300"
               />
             </div>

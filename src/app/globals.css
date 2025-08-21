@@ -54,3 +54,9 @@ html {
 .animate-float-smoother {
   animation: float-smoother 20s ease-in-out infinite alternate;
 }
+
+.swiper-wrapper {
+  transition-timing-function: linear !important; /* remove easing */
+  will-change: transform; /* force GPU */
+}
+

@@ -13,7 +13,7 @@ interface CarouselProps {
 export default function Carousel({
   children,
   slidesPerView = { base: 2, md: 3, lg: 4 },
-  delay = 3000,
+  delay = 2000,
 }: CarouselProps) {
   return (
     <Swiper

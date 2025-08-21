@@ -53,20 +53,6 @@ export const services: IService[] = [
     link: "#",
   },
   {
-    id: "mobile-dev",
-    icon: "📱",
-    title: "Mobile Development",
-    description:
-      "Native and cross-platform mobile applications for iOS and Android devices.",
-    features: [
-      "React Native Apps",
-      "Cross-Platform Solutions",
-      "App Store Deployment",
-      "Performance Optimization",
-    ],
-    link: "#",
-  },
-  {
     id: "backend-dev",
     icon: "🚀",
     title: "Backend Development",
@@ -94,83 +80,55 @@ export const services: IService[] = [
     ],
     link: "#",
   },
-  {
-    id: "ai",
-    icon: "🤖",
-    title: "AI Integration",
-    description:
-      "Intelligent features powered by artificial intelligence and machine learning.",
-    features: [
-      "ChatBot Development",
-      "AI-Powered Features",
-      "Machine Learning",
-      "Data Analytics",
-    ],
-    link: "#",
-  },
-  {
-    id: "cloud",
-    icon: "☁️",
-    title: "Cloud Solutions",
-    description:
-      "Scalable cloud infrastructure and deployment solutions for modern applications.",
-    features: [
-      "AWS & Azure Deployment",
-      "DevOps & CI/CD",
-      "Performance Monitoring",
-      "Security Implementation",
-    ],
-    link: "#",
-  },
 ];
 export const projects: IProject[] = [
   {
     id: 1,
-    title: "E-Marketplace Platform",
+    title: "Englisher",
     description:
-      "A scalable multi-merchant marketplace where businesses can create their own online store or join the global market.",
+      "An online English learning academy helping learners worldwide improve communication, fluency, and confidence with expert-led courses.",
     image: "/images/projects/project1.jpg",
-    link: "https://www.project1.com",
+    link: "https://englisherofficial.com/en",
   },
   {
     id: 2,
-    title: "Task Follow-Up System",
+    title: "BellaRoom",
     description:
       "A task management web app with progress tracking, deadlines, and team collaboration features.",
     image: "/images/projects/project2.jpg",
-    link: "https://www.project2.com",
+    link: "https://bellaroomeg.com/",
   },
   {
     id: 3,
-    title: "Desktop Solutions",
+    title: "Elqamhawy",
     description:
       "Lightweight desktop applications using Tauri and React for modern, cross-platform solutions.",
     image: "/images/projects/project3.jpg",
-    link: "https://www.project3.com",
+    link: "",
   },
   {
     id: 4,
-    title: "Desktop Solutions",
+    title: "Supernova system",
     description:
       "Lightweight desktop applications using Tauri and React for modern, cross-platform solutions.",
     image: "/images/projects/project4.jpg",
-    link: "https://www.project4.com",
+    link: "",
   },
   {
     id: 5,
-    title: "Desktop Solutions",
+    title: "Bio?",
     description:
       "Lightweight desktop applications using Tauri and React for modern, cross-platform solutions.",
     image: "/images/projects/project5.jpg",
-    link: "https://www.project5.com",
+    link: "",
   },
   {
     id: 6,
-    title: "Desktop Solutions",
+    title: "Eup",
     description:
       "Lightweight desktop applications using Tauri and React for modern, cross-platform solutions.",
     image: "/images/projects/project6.jpg",
-    link: "https://www.project6.com",
+    link: "",
   },
 ];
 export const aboutCards: IAboutCard[] = [
