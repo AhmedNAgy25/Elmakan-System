@@ -208,14 +208,20 @@ export const testimonials: ITestimonial[] = [
 export const team: ITeam[] = [
   {
     name: "Abdelrahman Seada",
-    position: "Co-Founder & Technical Lead",
+    position: "Co-Founder & CEO",
     image: "/images/team/AbdelrahmanSeada.jpg",
     category: "main",
   },
   {
     name: "Ahmed Ayman",
-    position: "Co-Founder & Technical Lead",
+    position: "Co-Founder & CTO",
     image: "/images/team/AhmedAyman1.png",
+    category: "main",
+  },
+  {
+    name: "Ahmed Seada",
+    position: "Technical Lead",
+    image: "/images/team/Ahmed Seada.jpg",
     category: "main",
   },
   {
@@ -233,33 +239,27 @@ export const team: ITeam[] = [
 ];
 export const successors: ITeam[] = [
   {
-    name: "Ahmed Ali",
-    position: "Back-end intern",
-    image: "/images/team/Ahmed Ayman.jpg",
-    category: "successor",
-  },
-  {
     name: "Ahmed Nagy",
     position: "Front-end intern",
-    image: "/images/team/Ahmed NAgy.webp",
+    image: "/images/successors/Ahmed NAgy.webp",
     category: "successor",
   },
   {
     name: "Abdelrahman Elaraby",
     position: "Back-end intern",
-    image: "/images/team/AbdelrahmanAmr.png",
+    image: "/images/successors/AbdelrahmanAmr.png",
     category: "successor",
   },
   {
     name: "Hussein",
     position: "Front-end intern",
-    image: "/images/team/Hussein.png",
+    image: "/images/successors/Hussein.png",
     category: "successor",
   },
   {
     name: "Noor",
     position: "Back-end intern",
-    image: "/images/team/Noor.webp",
+    image: "/images/successors/Noor.webp",
     category: "successor",
   },
 ];
