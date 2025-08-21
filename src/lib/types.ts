@@ -17,7 +17,6 @@ export interface IService {
   title: string;
   description: string;
   features: string[];
-  link: string;
 }
 
 export interface IProject {

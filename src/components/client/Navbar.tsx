@@ -9,11 +9,19 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white/30 backdrop-blur-xl border-white/20 shadow-md">
+    <header className="fixed top-0 left-0 w-full z-50 bg-transparent">
       {/* gradient line below navbar */}
       {/* <div className="h-0.5 w-full bg-gradient-to-r from-purple-500 via-purple-300 to-purple-200 absolute top-full left-0"></div> */}
 
-      <nav className="container mx-auto flex justify-between items-center px-6 py-4 ">
+      <nav
+        className="mx-auto mt-1
+      w-full lg:w-5/6 
+      flex justify-between items-center
+      px-6 py-4 
+      bg-white/10 backdrop-blur-sm 
+      border border-white/20 
+      rounded-2xl shadow-md"
+      >
         {/* logo */}
         <a
           href="#home"

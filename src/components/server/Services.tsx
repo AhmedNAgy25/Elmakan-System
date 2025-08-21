@@ -1,10 +1,11 @@
-export const dynamic = "force-static";
-export const revalidate = 10;
-
+import Image from "next/image";
 import { IService } from "@/lib/types";
 import { getServices } from "@/lib/data";
 import SectionTitle from "../ui/SectionTitle";
 import SectionSubtitle from "../ui/SectionSubtitle";
+
+export const dynamic = "force-static";
+export const revalidate = 10;
 
 export default async function Services({ id }: { id: string }) {
   const services = await getServices();
@@ -14,7 +15,7 @@ export default async function Services({ id }: { id: string }) {
       id={id}
       className="relative py-28 px-6 sm:px-10 lg:px-20 bg-slate-50"
     >
-      {/* sec title */}
+      {/* section title */}
       <div className="container mx-auto text-center mb-20">
         <SectionTitle text="Our Services" />
         <SectionSubtitle
@@ -31,8 +32,14 @@ export default async function Services({ id }: { id: string }) {
             className="flex flex-col bg-white rounded-xl shadow-lg p-6 sm:p-8 lg:p-10 border border-gray-100 hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300"
           >
             {/* icon */}
-            <div className="flex justify-center mb-8 text-purple-600 text-5xl">
-              {service.icon}
+            <div className="flex justify-center mb-8">
+              <Image
+                src={`/${service.icon}`}
+                alt={service.title}
+                width={80}
+                height={80}
+                className="w-20 h-20 object-contain "
+              />
             </div>
 
             {/* title */}
@@ -45,7 +52,7 @@ export default async function Services({ id }: { id: string }) {
               {service.description}
             </p>
 
-            {/* features (pushed to bottom) */}
+            {/* features */}
             <ul className="space-y-3 text-base text-gray-700 mt-auto">
               {service.features?.map((feature, index) => (
                 <li key={index} className="flex items-start">

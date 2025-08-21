@@ -18,7 +18,6 @@ export default async function Hero({ id }: { id: string }) {
       <div className="absolute w-26 h-26 bg-white opacity-15 rounded-full bottom-50 right-40 animate-float-slow"></div>
       <div className="absolute w-20 h-20 bg-white opacity-10 rounded-full top-20 right-20 animate-float-slower"></div>
 
-
       {/* hero container */}
       <div className="container max-w-4xl md:max-w-3xl sm:max-w-2xl mx-auto px-6 text-center relative z-10">
         {/* highlight */}
@@ -38,14 +37,16 @@ export default async function Hero({ id }: { id: string }) {
 
         {/* tech stack */}
         <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 mb-10">
-          {["React & Next.js","Node.js & Express","AI Integration","Cloud Deploy"].map((tech) => (
-            <span
-              key={tech}
-              className="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 md:py-2.5 border border-white/80 bg-[#ffffff33] text-white text-xs sm:text-sm md:text-sm rounded-full hover:bg-[#ffffff61] transition transform hover:-translate-y-[1px] sm:hover:-translate-y-[2px] duration-500 ease-in-out shadow-sm"
-            >
-              {tech}
-            </span>
-          ))}
+          {["React & Next.js", "Node.js & Express", "AI Integration","Maintenance"].map(
+            (tech) => (
+              <span
+                key={tech}
+                className="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 md:py-2.5 border border-white/80 bg-[#ffffff33] text-white text-xs sm:text-sm md:text-sm rounded-full hover:bg-[#ffffff61] transition transform hover:-translate-y-[1px] sm:hover:-translate-y-[2px] duration-500 ease-in-out shadow-sm"
+              >
+                {tech}
+              </span>
+            )
+          )}
         </div>
 
         {/* CTA */}
@@ -57,7 +58,9 @@ export default async function Hero({ id }: { id: string }) {
           >
             {/* light sweep */}
             <span className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full skew-x-12 transition-transform duration-200 ease-in-out"></span>
-            <span className="relative z-10 text-sm sm:text-base md:text-lg">Start your project</span>
+            <span className="relative z-10 text-sm sm:text-base md:text-lg">
+              Start your project
+            </span>
           </a>
 
           {/* discover more */}

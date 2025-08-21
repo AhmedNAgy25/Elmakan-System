@@ -40,7 +40,7 @@ export const slides: ISlide = {
 export const services: IService[] = [
   {
     id: "web-dev",
-    icon: "🌐",
+    icon: "images/services/web.svg",
     title: "Web Development",
     description:
       "Custom web applications built with modern frameworks and responsive design principles.",
@@ -50,11 +50,10 @@ export const services: IService[] = [
       "Progressive Web Apps",
       "API Integration",
     ],
-    link: "#",
   },
   {
     id: "backend-dev",
-    icon: "🚀",
+    icon: "images/services/backend.svg",
     title: "Backend Development",
     description:
       "Scalable server-side solutions with robust databases and API architectures.",
@@ -64,11 +63,10 @@ export const services: IService[] = [
       "RESTful APIs",
       "Cloud Integration",
     ],
-    link: "#",
   },
   {
     id: "ui-ux",
-    icon: "🎨",
+    icon: "images/services/UI-UX.svg",
     title: "UI/UX Design",
     description:
       "User-centered design solutions that combine aesthetics with functionality.",
@@ -78,7 +76,6 @@ export const services: IService[] = [
       "Prototyping",
       "Design Systems",
     ],
-    link: "#",
   },
 ];
 export const projects: IProject[] = [
