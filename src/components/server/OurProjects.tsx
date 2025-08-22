@@ -10,7 +10,7 @@ import SectionSubtitle from "../ui/SectionSubtitle";
 export default async function OurProjects({ id }: { id: string }) {
   const projects = await getProjects();
   return (
-    <section id={id} className="py-24 px-6 sm:px-10 lg:px-20 bg-white">
+    <section id={id} className="mx-auto py-24 px-6 sm:px-10 lg:px-20 bg-white max-w-90/100">
       <div className="container mx-auto text-center mb-12">
         {/* title */}
         <SectionTitle text="Our Projects" />

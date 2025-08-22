@@ -11,8 +11,8 @@ import SectionSubtitle from "../ui/SectionSubtitle";
 export default async function Testimonials({ id }: { id: string }) {
   const testimonials = await getTestimonials();
   return (
-    <section id={id} className="relative py-24 px-12 bg-gray-50">
-      <div className="container mx-auto text-center">
+    <section id={id} className="relative mx-auto py-24 px-12 bg-gray-50 ">
+      <div className="container mx-auto text-center max-w-85/100">
         <SectionTitle text="What Our Clients Say"></SectionTitle>
         <SectionSubtitle text="See what our clients have to say about working with Elmakan System" />
 

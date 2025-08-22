@@ -1,3 +1,6 @@
+export const dynamic = "force-static";
+export const revalidate = 10;
+
 import Navbar from "@/components/client/Navbar";
 import About from "@/components/server/About";
 import Footer from "@/components/server/Footer";
