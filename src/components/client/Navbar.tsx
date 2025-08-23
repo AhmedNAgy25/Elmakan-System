@@ -38,7 +38,7 @@ export default function Navbar() {
 
         {/* links */}
         <ul
-          className={`bg-white/80 backdrop-blur-3xl mt-1 border-white/20 rounded-2xl flex flex-col lg:flex-row absolute lg:static top-full left-0 w-full lg:w-auto shadow-md lg:bg-transparent lg:backdrop-blur-none border lg:border-0 lg:shadow-none space-y-4 lg:space-y-0 lg:space-x-8 p-6 lg:p-0 transition-all duration-300 ${
+          className={`bg-white/80 hover:bg-red-300g backdrop-blur-3xl mt-1 border-white/20 rounded-2xl flex flex-col lg:flex-row absolute lg:static top-full left-0 w-full lg:w-auto shadow-md lg:bg-transparent lg:backdrop-blur-none border lg:border-0 lg:shadow-none space-y-4 lg:space-y-0 lg:space-x-8 p-6 lg:p-0 transition-all duration-300 ${
             open
               ? "opacity-100 translate-y-0"
               : "opacity-0 -translate-y-4 lg:opacity-100 lg:translate-y-0"

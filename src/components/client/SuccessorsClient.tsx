@@ -10,7 +10,7 @@ export default function SuccessorsClient({ successors }: { successors: ITeam[] }
     <Carousel>
       {successors.map((member, index) => (
         <SwiperSlide key={index}>
-          <div className="flex flex-col justify-between items-center text-center min-h-65 bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 group">
+          <div className="flex flex-col mx-auto justify-between items-center text-center min-h-65  bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 group">
             
             {/* top section */}
             <div className="flex flex-col items-center">

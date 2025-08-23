@@ -8,7 +8,7 @@ export default function ContactWrapper({ id }: { id: string }) {
   return (
     <section
       id={id}
-      className="relative py-24 px-4 sm:px-6 bg-gradient-to-br from-white to-purple-50"
+      className="relative mx-auto py-24 px-4 sm:px-6 bg-gradient-to-br from-white to-purple-50"
     >
       <div className="container mx-auto max-w-6xl">
         {/* sec header */}
@@ -18,7 +18,7 @@ export default function ContactWrapper({ id }: { id: string }) {
         </div>
 
         {/* content container */}
-        <div className="grid gap-8 md:grid-cols-2 bg-white/90 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden">
+        <div className="grid gap-8 mx-auto md:grid-cols-2 bg-white/90 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden max-w-85/100">
           {/* left form */}
           <ContactForm />
 

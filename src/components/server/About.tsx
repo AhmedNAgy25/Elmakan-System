@@ -31,6 +31,7 @@ export default async function About({ id }: { id: string }) {
             alt="Elmakan System team"
             width={953}
             height={336}
+            loading="lazy"
             className="w-full max-w-2xl "
           />
 

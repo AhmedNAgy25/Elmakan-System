@@ -38,6 +38,7 @@ export default async function Services({ id }: { id: string }) {
                 alt={service.title}
                 width={80}
                 height={80}
+                loading="lazy"
                 className="w-20 h-20 object-contain "
               />
             </div>
